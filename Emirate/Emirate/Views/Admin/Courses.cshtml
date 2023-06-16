@@ -1,0 +1,232 @@
+﻿@model IEnumerable<Emirate.ViewModels.CourseViewModel>
+@{
+    ViewData["Title"] = "Courses";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<style>
+    body {
+        counter-reset: Serial; /* / Set the Serial counter to 0 /*/
+    }
+
+    tr td:first-child:before {
+        counter-increment: Serial; /* / Increment the Serial counter /*/
+        content: counter(Serial); /*  / Display the counter /*/
+    }
+</style>
+
+<div class="container col-lg-12 col-md-12 col-sm-12">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Courses</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Dashboard</a></li>
+                    <li class="breadcrumb-item active">Courses</li>
+                </ul>
+            </div>
+            <div class="col-auto float-right ml-auto">
+             
+                <a class="btn btn-primary text-decoration-none p-1" id="common_button" data-toggle="modal" data-target="#courseRegModal"><i class="fa fa-plus p-0 m-0"></i> Add Course</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <table class="table display table-bordered table-striped table-hover" id="myTable" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="p-0">S/N</th>
+                    <th class="p-0">Course Name/Code.</th>
+                    <th class="p-0">Level/Department</th>
+                    <th class="p-0">Semester</th>
+                    <th class="p-0">Course Unit</th>
+                    <th class="p-0">Date Created</th>
+                    <th class="">Action</th>
+                </tr>
+            </thead>
+            @if (Model != null && Model.Count() > 0)
+            {
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+
+                        <tr>
+                            <td></td>
+                            <td>@item.Name</td>
+                            <td>@item.LevelName <b>/</b> <span>@item.DepartmentName</span></td>
+                            <td>@item.Semester</td>
+                            <td>@item.CourseUnit</td>
+                            <td>@item.DateCreated.ToString("d")</td>
+                            <td>
+                                <span><a data-toggle="modal" data-target="#editCoursesModal" onclick="GetCoursesByID('@item.Id')" class="text-primary p-2"><i class="fa-solid fa-pen-to-square"></i></a> </span>
+                                <span><a data-toggle="modal" data-target="#deleteCoursesModal" onclick="GetCourseByID('@item.Id')" class="text-danger p-2"><i class="fa-solid fa-trash-can"></i></a></span>
+                            </td>
+
+                        </tr>
+
+                    }
+
+                </tbody>
+
+            }
+
+        </table>
+    </div>
+
+    
+
+    <!--Add Courses Modal-->
+    <div class="modal fade" id="courseRegModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header p-1 border-bottom-0">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close border-0 text-danger bg-white p-2" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="form-group row">
+                    <h3 class="text-center modal-title">Course Registration</h3>
+                </div>
+
+                <div class=" row  p-3">
+                        <div class="col-12 form-group">
+                        <label>Departments</label>
+                            <select class="form-control" id="cou_Department" asp-items="@(new SelectList(@ViewBag.Department, "Id", "Name" ))" style="border-radius:0px;">
+                            </select>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label>Level</label>
+                            <select class="form-control" id="cou_Level" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
+                            </select>
+                    </div>
+
+                    <div class="col-12 form-group">
+                        <label>Semester</label>
+                            <select class="form-control" id="cou_Semester" asp-items="@(new SelectList(@ViewBag.Semester, "Id", "Name" ))" style="border-radius:0px;">
+                            </select>
+                    </div>
+                </div>
+
+                <div class="row  p-3">
+                    <div class="col">
+                        <label>Course Name :</label><br />
+                        <input id="course_name" placeholder="Course Name" />
+                    </div>
+                    @* <div class="col">
+                        <label>Course Code :</label><br />
+                        <input placeholder="Course Code" />
+                    </div>*@
+                    <div class="col">
+                        <label>Credit Unit :</label><br />
+                        <input id="course_unit" placeholder="Credit Unit" />
+                    </div>
+                </div>
+                  
+
+                <div>
+                    <a class="btn  d-flex mx-auto px-5 mb-2 w-25 text-decoration-none" id="common_button" onclick="submitCourses()">Save</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Edit Courses Modal-->
+    <div class="modal fade" id="editCoursesModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header p-1 border-bottom-0">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close border-0 text-danger bg-white p-2" data-dismiss="modal">&times;</button>
+                </div>
+
+                <input id="coursesEdit_Id" class="form-control" hidden />
+                <div class="form-group row">
+                    <h3 class="text-center modal-title">Edit Course Details</h3>
+                </div>
+
+                <div class="container mx-auto w-100">
+
+                    <div class=" row w-100 p-3">
+                        <div class="col-12 form-group">
+                            <label>Departments</label>
+                            <select class="form-control" id="edit_cous_Department" asp-items="@(new SelectList(@ViewBag.Department, "Id", "Name" ))" style="border-radius:0px;">
+                            </select>
+                        </div>
+                        <div class="col-12 form-group">
+                            <label>Level</label>
+                            <select class="form-control" id="edit_cous_Level" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
+                            </select>
+                        </div>
+
+                        <div class="col-12 form-group">
+                            <label>Semester</label>
+                            <select class="form-control" id="edit_cous_Semester" asp-items="@(new SelectList(@ViewBag.Semester, "Id", "Name" ))" style="border-radius:0px;">
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row w-100 p-3">
+                        <div class="col">
+                            <label>Course Name :</label><br />
+                            <input id="editCoursesName" placeholder="Course Name" />
+                        </div>
+                   
+                        <div class="col">
+                            <label>Credit Unit :</label><br />
+                            <input id="editCourseUnit" placeholder="Credit Unit" />
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a onclick="EditCourses('Id')" class="btn btn-secondary d-flex mx-auto px-5 mb-2 w-25 text-decoration-none  common_button" id="common_button">Submit</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Delete Courses Modal-->
+    <div class="modal custom-modal fade" id="deleteCoursesModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header p-1 border-bottom-0">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close border-0 text-danger bg-white p-2" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="form-group row">
+                    <h3 class="text-center">Delete Department </h3>
+                    <input class="form-control" type="text" id="courseDelete_Id" hidden>
+                    <p class="text-center text-muted modal-title"> Are you sure you want to delete this? </p>
+                </div>
+
+                <div class="modal-btn delete-action mb-3">
+                    <div class="row">
+                        <div class="col-6 text-end">
+                            <a href="javascript:void(0);" class="btn continue-btn p-2 w-50" onclick="DeleteCourses('DELETE', 'Id')" id="common_button" style="border-radius: 15px;">Delete</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="javascript:void(0);" data-dismiss="modal" class="btn btn-secondary cancel-btn p-2 w-50" style="border-radius: 15px;">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#myTable').DataTable();
+    //$(".mySelect").select2();
+</script>
+
+
+                       

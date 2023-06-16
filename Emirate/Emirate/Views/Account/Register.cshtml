@@ -1,0 +1,206 @@
+﻿@model Emirate.ViewModels.ApplicationUserViewModel
+@{
+	ViewData["Title"] = "Register";
+	Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+
+<div class="container d-flex justify-content-sm-center">
+	<div class="card  col-md-10 col-sm-4" id="regs">
+		<div class="mx-sm-auto mt-2 mb-5">
+			<h1 class="text-primary text-opacity-75">Sign Up</h1>
+		</div>
+
+		<div>
+			<form method="post" asp-action="Register" asp-controller="Account" class="mb-5">
+
+				<div class="row form-group">
+					<div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<label>First name:</label>
+						<input type="text" class="form-control" asp-for="FirstName" placeholder="First name">
+					</div>
+					<div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<label>Middle name:</label>
+						<input type="text" class="form-control" asp-for="MiddleName" placeholder="Middle name">
+					</div>
+					<div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<label>Last name:</label>
+						<input type="text" class="form-control" asp-for="LastName" placeholder="Last name">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col">
+
+						<label>Email Address:</label>
+						<input type="email" asp-for="Email" class="form-control" placeholder="Enter email">
+						<span asp-validation-for="Email" class="text-danger"></span>
+					</div>
+					<div class=" col">
+						<label>Date of birth:</label>
+						<input type="date" asp-for="DateOfBirth" class="form-control" placeholder="">
+					</div>
+
+					<div class=" col">
+						<label class="">Gender:</label>
+						<select class="form-control" asp-for="GenderId" asp-items="@(new SelectList(@ViewBag.Gender ,"Id", "Name" ))" style="border-radius:0px;">
+						</select>
+					</div>
+				</div>
+				
+
+
+				<div class="row form-group">
+					<div class="col">
+						<label>Department:</label>
+						<select class="form-control" asp-for="DepartmentId" asp-items="@(new SelectList(@ViewBag.Department, "Id", "Name" ))" style="border-radius:0px;">
+						</select>
+					</div>
+
+					<div class="col">
+						<label style="font-size: 18px" class="">  Level:</label> <br />
+						<select class="form-control" id="edit_cous_Level" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
+						</select>
+
+						<select class="form-control" id="edit_cous_Level" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
+						</select>
+					</div>
+
+					<div class="col">
+						<label>RegNumber:</label>
+						<input type="text" asp-for="RegNumber" class="form-control" placeholder="RegNumber">
+					</div>
+				</div>
+
+				<div class="row form-group mb-3">
+					<div class=" col form-group">
+						<label>Password:</label>
+						<input type="password" asp-for="Password" class="form-control" placeholder="Password">
+					</div>
+
+					<div class=" col form-group ">
+						<label>Confirm Password:</label>
+						<input type="password" asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password">
+					</div>
+
+
+					<div class="col">
+						<label>Phone no:</label>
+						<input type="tel" asp-for="PhoneNumber" class="form-control" placeholder="">
+					</div>
+				</div>
+
+				<div class="m-auto">
+					<button asp-controller="Account" asp-action="Register" class="btn btn-primary d-block m-auto w-25 p-2" type="submit"> Register </button>
+				</div>
+
+				<div class="mt-3 text-center">
+					<b> Already have an account? ...
+						<a href="/Account/Login" class="btn btn-primary p-1 px-3">
+						 Login
+						</a>
+					</b>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+</div>
+@*<div class="container card mx-auto">
+	<h1>Sign Up</h1>
+	<a href="/Account/Login">
+		Already have an account?
+	</a>
+</div>
+
+
+<div class="card  col-md-8 col-sm-4">
+<div class=" m-3  flex align-content-center" id="regs">
+	
+	<form method="post" asp-action="Register" asp-controller="Account">
+
+		<div class="row form-group">
+			<div class="col-xl-4 col-md-6 col-sm-12">
+				<label >First name:</label>
+				<input type="text" class="form-control" asp-for="FirstName"  placeholder="First name">
+			</div>
+			<div class="col-xl-4 col-md-6 col-sm-12">
+				<label >Middle name:</label>
+				<input type="text" class="form-control" asp-for="MiddleName" placeholder="Middle name">
+			</div>
+			<div class="col-xl-4 col-md-6 col-sm-12">
+				<label>Last name:</label>
+				<input type="text" class="form-control" asp-for="LastName" placeholder="Last name">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="level-select m-2">
+				<label >Level:</label>
+				<select asp-for="Level">
+					<option value="100 Level">100 Level</option>
+					<option value="200 Level">200 Level</option>
+					<option value="300 Level">300 Level</option>
+					<option value="400 Level">400 Level</option>
+					<option value="500 Level">500 Level</option>
+					<option value="600 Level">600 Level </option>
+				</select>
+			</div>
+			<div class="gender-select m-2">
+				<label>Gender:</label>
+				<select asp-for="Gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</div>
+		</div>
+
+
+		<div class="row form-group">
+			<div class="col">
+				<label >Department:</label>
+				<input type="text" asp-for="Department" class="form-control" placeholder="">
+			</div>
+
+			<div class="col">
+				<label >RegNumber:</label>
+				<input type="text" asp-for="RegNumber" class="form-control" placeholder="RegNumber">
+			</div>
+			
+			<div class="col">
+				<label >Date of birth:</label>
+				<input type="date" asp-for="DateOfBirth" class="form-control" placeholder="">
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class=" col">
+				<label>Email Address:</label>
+				<input type="email" asp-for="Email"  class="form-control" placeholder="Enter email">
+				<span asp-validation-for="Email" class="text-danger"></span>
+			</div>
+			<div class="col">
+				<label >Phone no:</label>
+				<input type="tel" asp-for="PhoneNumber" class="form-control" placeholder="">
+			</div>
+		</div>
+
+		
+
+		<div class="row form-group">
+			<div class=" col form-group">
+				<label>Password:</label>
+				<input type="password" asp-for="Password" class="form-control" placeholder="Password">
+			</div>
+
+			<div class=" col form-group">
+				<label >Confirm Password:</label>
+				<input type="password" asp-for="ConfirmPassword" class="form-control" placeholder="Password (again)">
+			</div>
+		</div>
+
+		<button asp-action="Register" class="btn btn-primary col-auto m-2" type="submit">Register</button>
+	</form>
+	</div>
+</div>
+*@
+

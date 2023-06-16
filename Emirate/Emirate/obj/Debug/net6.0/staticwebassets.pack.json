@@ -1,0 +1,1589 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Emirate.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Emirate.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\Sweetalert2\\dist\\sweetalert2.all.js",
+      "PackagePath": "staticwebassets\\Sweetalert2\\dist\\sweetalert2.all.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\Sweetalert2\\dist\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\Sweetalert2\\dist\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\Sweetalert2\\dist\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\Sweetalert2\\dist\\sweetalert2.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\Sweetalert2\\dist\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\Sweetalert2\\dist\\sweetalert2.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\Sweetalert2\\dist\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\Sweetalert2\\dist\\sweetalert2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\Sweetalert2\\dist\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\Sweetalert2\\dist\\sweetalert2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\css\\siteStyle.css",
+      "PackagePath": "staticwebassets\\css\\siteStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\all.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\brands.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\brands.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\brands.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\regular.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\regular.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\regular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\solid.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\solid.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\solid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\v4-shims.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\all.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\all.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\brands.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\brands.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\brands.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\fontawesome.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\regular.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\regular.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\regular.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\solid.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\solid.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\solid.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\v4-shims.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\fontawesome-free-6.4.0-web\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\fontawesome-free-6.4.0-web\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\33.jpg",
+      "PackagePath": "staticwebassets\\images\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\66.jpg",
+      "PackagePath": "staticwebassets\\images\\66.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\77.jpg",
+      "PackagePath": "staticwebassets\\images\\77.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\Convocation.jpg",
+      "PackagePath": "staticwebassets\\images\\Convocation.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\LAB.webp",
+      "PackagePath": "staticwebassets\\images\\LAB.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\LAB2 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\LAB2 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\Law-students.jpg",
+      "PackagePath": "staticwebassets\\images\\Law-students.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\OIP (1).jpg",
+      "PackagePath": "staticwebassets\\images\\OIP (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\OIP.jpg",
+      "PackagePath": "staticwebassets\\images\\OIP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\R (1).jpg",
+      "PackagePath": "staticwebassets\\images\\R (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\R (2).jpg",
+      "PackagePath": "staticwebassets\\images\\R (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\R.jpg",
+      "PackagePath": "staticwebassets\\images\\R.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\Silab.jpg",
+      "PackagePath": "staticwebassets\\images\\Silab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\WACCBIP_Med.jpg",
+      "PackagePath": "staticwebassets\\images\\WACCBIP_Med.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\adm.jpg",
+      "PackagePath": "staticwebassets\\images\\adm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\admin.jpg",
+      "PackagePath": "staticwebassets\\images\\admin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\agric1.jpg",
+      "PackagePath": "staticwebassets\\images\\agric1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\allied health.jpg",
+      "PackagePath": "staticwebassets\\images\\allied health.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\allied2.jpg",
+      "PackagePath": "staticwebassets\\images\\allied2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\art.jpg",
+      "PackagePath": "staticwebassets\\images\\art.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\basiec med.jpg",
+      "PackagePath": "staticwebassets\\images\\basiec med.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd.jpg",
+      "PackagePath": "staticwebassets\\images\\bd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd1.jpg",
+      "PackagePath": "staticwebassets\\images\\bd1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd11.jpg",
+      "PackagePath": "staticwebassets\\images\\bd11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd2.jpg",
+      "PackagePath": "staticwebassets\\images\\bd2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd3.jpg",
+      "PackagePath": "staticwebassets\\images\\bd3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd4.jpg",
+      "PackagePath": "staticwebassets\\images\\bd4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd5.jpg",
+      "PackagePath": "staticwebassets\\images\\bd5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd6.jpg",
+      "PackagePath": "staticwebassets\\images\\bd6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd7.jpg",
+      "PackagePath": "staticwebassets\\images\\bd7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bd8.jpg",
+      "PackagePath": "staticwebassets\\images\\bd8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\bio.jpg",
+      "PackagePath": "staticwebassets\\images\\bio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\build.jpg",
+      "PackagePath": "staticwebassets\\images\\build.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\camblib.jpeg",
+      "PackagePath": "staticwebassets\\images\\camblib.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\campus.jpg",
+      "PackagePath": "staticwebassets\\images\\campus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\campus1.jpeg",
+      "PackagePath": "staticwebassets\\images\\campus1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\campus2.jpg",
+      "PackagePath": "staticwebassets\\images\\campus2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\campus3.jpg",
+      "PackagePath": "staticwebassets\\images\\campus3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cert.jpg",
+      "PackagePath": "staticwebassets\\images\\cert.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cert1.jpg",
+      "PackagePath": "staticwebassets\\images\\cert1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\class.jpg",
+      "PackagePath": "staticwebassets\\images\\class.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\clsrm.jpeg",
+      "PackagePath": "staticwebassets\\images\\clsrm.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cmp 1.jpg",
+      "PackagePath": "staticwebassets\\images\\cmp 1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cmp1.jpg",
+      "PackagePath": "staticwebassets\\images\\cmp1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cmpl.jpg",
+      "PackagePath": "staticwebassets\\images\\cmpl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cmplab.jpg",
+      "PackagePath": "staticwebassets\\images\\cmplab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cmplab1.jpg",
+      "PackagePath": "staticwebassets\\images\\cmplab1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cmplab2.jpg",
+      "PackagePath": "staticwebassets\\images\\cmplab2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\cmplibr.jpg",
+      "PackagePath": "staticwebassets\\images\\cmplibr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\commed.webp",
+      "PackagePath": "staticwebassets\\images\\commed.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\complb.jpg",
+      "PackagePath": "staticwebassets\\images\\complb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\conv.jpg",
+      "PackagePath": "staticwebassets\\images\\conv.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\convoc.jpeg",
+      "PackagePath": "staticwebassets\\images\\convoc.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\convoc1.png",
+      "PackagePath": "staticwebassets\\images\\convoc1.png"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\court.jpg",
+      "PackagePath": "staticwebassets\\images\\court.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\court1.jpg",
+      "PackagePath": "staticwebassets\\images\\court1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\dentist.webp",
+      "PackagePath": "staticwebassets\\images\\dentist.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\dept lib.jpeg",
+      "PackagePath": "staticwebassets\\images\\dept lib.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\deptlb.jpg",
+      "PackagePath": "staticwebassets\\images\\deptlb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\deptlib.jpeg",
+      "PackagePath": "staticwebassets\\images\\deptlib.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\eng work.jpg",
+      "PackagePath": "staticwebassets\\images\\eng work.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\engr st.jpg",
+      "PackagePath": "staticwebassets\\images\\engr st.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\env.jpg",
+      "PackagePath": "staticwebassets\\images\\env.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\env1.jpg",
+      "PackagePath": "staticwebassets\\images\\env1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\euclogo1.png",
+      "PackagePath": "staticwebassets\\images\\euclogo1.png"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\euclogo1copy.png",
+      "PackagePath": "staticwebassets\\images\\euclogo1copy.png"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\euclogo2.ico",
+      "PackagePath": "staticwebassets\\images\\euclogo2.ico"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\facility.jpg",
+      "PackagePath": "staticwebassets\\images\\facility.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\forestry.jpg",
+      "PackagePath": "staticwebassets\\images\\forestry.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\geoinfo.jpeg",
+      "PackagePath": "staticwebassets\\images\\geoinfo.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\girl.webp",
+      "PackagePath": "staticwebassets\\images\\girl.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\grad.jpeg",
+      "PackagePath": "staticwebassets\\images\\grad.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\gradceleb.jpg",
+      "PackagePath": "staticwebassets\\images\\gradceleb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\grads.jpg",
+      "PackagePath": "staticwebassets\\images\\grads.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\hall.jpg",
+      "PackagePath": "staticwebassets\\images\\hall.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\happy students.jpeg",
+      "PackagePath": "staticwebassets\\images\\happy students.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\hs.jpg",
+      "PackagePath": "staticwebassets\\images\\hs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\hst.jpg",
+      "PackagePath": "staticwebassets\\images\\hst.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\hst1.jpg",
+      "PackagePath": "staticwebassets\\images\\hst1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\hst2.jpeg",
+      "PackagePath": "staticwebassets\\images\\hst2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\hst2.jpg",
+      "PackagePath": "staticwebassets\\images\\hst2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\hst3.jpg",
+      "PackagePath": "staticwebassets\\images\\hst3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\hst4.jpg",
+      "PackagePath": "staticwebassets\\images\\hst4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\ict.jpg",
+      "PackagePath": "staticwebassets\\images\\ict.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\ict2.jpg",
+      "PackagePath": "staticwebassets\\images\\ict2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\ictlib.jpeg",
+      "PackagePath": "staticwebassets\\images\\ictlib.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\knowledge.jpg",
+      "PackagePath": "staticwebassets\\images\\knowledge.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\knw.jpg",
+      "PackagePath": "staticwebassets\\images\\knw.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lab 4.webp",
+      "PackagePath": "staticwebassets\\images\\lab 4.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lab.JPG",
+      "PackagePath": "staticwebassets\\images\\lab.JPG"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lab2.jpg",
+      "PackagePath": "staticwebassets\\images\\lab2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lab21.jpg",
+      "PackagePath": "staticwebassets\\images\\lab21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lab4.jpg",
+      "PackagePath": "staticwebassets\\images\\lab4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lab5.jpg",
+      "PackagePath": "staticwebassets\\images\\lab5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lab6.jpg",
+      "PackagePath": "staticwebassets\\images\\lab6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lab7.jpg",
+      "PackagePath": "staticwebassets\\images\\lab7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\labgirl.jpg",
+      "PackagePath": "staticwebassets\\images\\labgirl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\labm.jpg",
+      "PackagePath": "staticwebassets\\images\\labm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\labsc.jpg",
+      "PackagePath": "staticwebassets\\images\\labsc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\law st.jpg",
+      "PackagePath": "staticwebassets\\images\\law st.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lawst2.jpeg",
+      "PackagePath": "staticwebassets\\images\\lawst2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lbwrk.jpg",
+      "PackagePath": "staticwebassets\\images\\lbwrk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lbwrk1.jpg",
+      "PackagePath": "staticwebassets\\images\\lbwrk1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lec.jpg",
+      "PackagePath": "staticwebassets\\images\\lec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lec1.webp",
+      "PackagePath": "staticwebassets\\images\\lec1.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lect.jpg",
+      "PackagePath": "staticwebassets\\images\\lect.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lect1.jpg",
+      "PackagePath": "staticwebassets\\images\\lect1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lect2.jpg",
+      "PackagePath": "staticwebassets\\images\\lect2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lect3.webp",
+      "PackagePath": "staticwebassets\\images\\lect3.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lect4.webp",
+      "PackagePath": "staticwebassets\\images\\lect4.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lecthal.jpg",
+      "PackagePath": "staticwebassets\\images\\lecthal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lecthall-ext.jpg",
+      "PackagePath": "staticwebassets\\images\\lecthall-ext.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lecthall.jpg",
+      "PackagePath": "staticwebassets\\images\\lecthall.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lectr.jpg",
+      "PackagePath": "staticwebassets\\images\\lectr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lecture 1.jpg",
+      "PackagePath": "staticwebassets\\images\\lecture 1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lecture-hall.jpg",
+      "PackagePath": "staticwebassets\\images\\lecture-hall.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lecturehall.jpg",
+      "PackagePath": "staticwebassets\\images\\lecturehall.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lib.webp",
+      "PackagePath": "staticwebassets\\images\\lib.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lib1.jpeg",
+      "PackagePath": "staticwebassets\\images\\lib1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\lib2.jpeg",
+      "PackagePath": "staticwebassets\\images\\lib2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\libs.jpg",
+      "PackagePath": "staticwebassets\\images\\libs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\libs1.jpg",
+      "PackagePath": "staticwebassets\\images\\libs1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\manateelab3.jpg",
+      "PackagePath": "staticwebassets\\images\\manateelab3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\matr.jpeg",
+      "PackagePath": "staticwebassets\\images\\matr.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\matrc.jpg",
+      "PackagePath": "staticwebassets\\images\\matrc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\matric1.png",
+      "PackagePath": "staticwebassets\\images\\matric1.png"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\mgt sc std.webp",
+      "PackagePath": "staticwebassets\\images\\mgt sc std.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\njaclsrm.jpg",
+      "PackagePath": "staticwebassets\\images\\njaclsrm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\oceano.jpg",
+      "PackagePath": "staticwebassets\\images\\oceano.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\ort fac.jpg",
+      "PackagePath": "staticwebassets\\images\\ort fac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\park.jpg",
+      "PackagePath": "staticwebassets\\images\\park.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\pexels-charlotte-may-5965557.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-charlotte-may-5965557.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\pexels-emily-ranquist-1205651.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-emily-ranquist-1205651.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\pexels-pavel-danilyuk-7942550.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-pavel-danilyuk-7942550.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\pharm.jpg",
+      "PackagePath": "staticwebassets\\images\\pharm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\pharm2.jpg",
+      "PackagePath": "staticwebassets\\images\\pharm2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\pharm3.jpg",
+      "PackagePath": "staticwebassets\\images\\pharm3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\physical scieces.jpg",
+      "PackagePath": "staticwebassets\\images\\physical scieces.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\restr.jpg",
+      "PackagePath": "staticwebassets\\images\\restr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\science.jpg",
+      "PackagePath": "staticwebassets\\images\\science.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\social sc.jpg",
+      "PackagePath": "staticwebassets\\images\\social sc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\social.jpg",
+      "PackagePath": "staticwebassets\\images\\social.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\sport.jpeg",
+      "PackagePath": "staticwebassets\\images\\sport.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\sports.jpeg",
+      "PackagePath": "staticwebassets\\images\\sports.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\std campus.jpg",
+      "PackagePath": "staticwebassets\\images\\std campus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\std.jpg",
+      "PackagePath": "staticwebassets\\images\\std.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\std1.jpeg",
+      "PackagePath": "staticwebassets\\images\\std1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\std1.jpg",
+      "PackagePath": "staticwebassets\\images\\std1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\std2.jpeg",
+      "PackagePath": "staticwebassets\\images\\std2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\stdn.jpeg",
+      "PackagePath": "staticwebassets\\images\\stdn.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\stlect.webp",
+      "PackagePath": "staticwebassets\\images\\stlect.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\stud.webp",
+      "PackagePath": "staticwebassets\\images\\stud.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\stud2.jpg",
+      "PackagePath": "staticwebassets\\images\\stud2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\teach 2.jpg",
+      "PackagePath": "staticwebassets\\images\\teach 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\teaching.jpg",
+      "PackagePath": "staticwebassets\\images\\teaching.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\teachtrain.jpg",
+      "PackagePath": "staticwebassets\\images\\teachtrain.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\tools.jpg",
+      "PackagePath": "staticwebassets\\images\\tools.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\unichart.png",
+      "PackagePath": "staticwebassets\\images\\unichart.png"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\unichart1.gif",
+      "PackagePath": "staticwebassets\\images\\unichart1.gif"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\unichart2.jpg",
+      "PackagePath": "staticwebassets\\images\\unichart2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\unichart3.jpeg",
+      "PackagePath": "staticwebassets\\images\\unichart3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\unichart3.jpg",
+      "PackagePath": "staticwebassets\\images\\unichart3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\univ.jpg",
+      "PackagePath": "staticwebassets\\images\\univ.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\unybd.jpg",
+      "PackagePath": "staticwebassets\\images\\unybd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\unybd1.webp",
+      "PackagePath": "staticwebassets\\images\\unybd1.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\unylib.jpg",
+      "PackagePath": "staticwebassets\\images\\unylib.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\user1.jpeg",
+      "PackagePath": "staticwebassets\\images\\user1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\userpx.jpeg",
+      "PackagePath": "staticwebassets\\images\\userpx.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\userr.jpeg",
+      "PackagePath": "staticwebassets\\images\\userr.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\vocation.jpg",
+      "PackagePath": "staticwebassets\\images\\vocation.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\vocation2.jpg",
+      "PackagePath": "staticwebassets\\images\\vocation2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\vocztion1.webp",
+      "PackagePath": "staticwebassets\\images\\vocztion1.webp"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\wildlife.jpg",
+      "PackagePath": "staticwebassets\\images\\wildlife.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\images\\wireless.jpg",
+      "PackagePath": "staticwebassets\\images\\wireless.jpg"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\demo.css",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\demo.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\css\\style.css",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\info.mgt.sys\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\info.mgt.sys\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\emirate.js",
+      "PackagePath": "staticwebassets\\js\\emirate.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\jquery-3.5.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.5.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\js\\sweetalert.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\js\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\js\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\css\\select2.css",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\css\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\af.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\af.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ar.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ar.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\az.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\az.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\bg.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\bg.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\bn.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\bn.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\bs.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\bs.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ca.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ca.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\cs.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\cs.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\da.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\da.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\de.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\de.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\dsb.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\dsb.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\el.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\el.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\en.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\en.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\eo.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\eo.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\es.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\es.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\et.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\et.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\eu.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\eu.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\fa.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\fa.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\fi.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\fi.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\fr.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\fr.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\gl.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\gl.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\he.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\he.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\hi.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\hi.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\hr.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\hr.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\hsb.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\hsb.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\hu.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\hu.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\hy.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\hy.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\id.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\id.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\is.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\is.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\it.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\it.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ja.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ja.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ka.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ka.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\km.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\km.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ko.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ko.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\lb.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\lb.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\lt.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\lt.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\lv.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\lv.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\mk.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\mk.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ms.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ms.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\nb.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\nb.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ne.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ne.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\nl.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\nl.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\pa.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\pa.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\pl.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\pl.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ps.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ps.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\pt-BR.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\pt-BR.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\pt.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\pt.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ro.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ro.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ru.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ru.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\sk.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\sk.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\sl.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\sl.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\sq.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\sq.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\sr-Cyrl.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\sr-Cyrl.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\sr.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\sr.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\sv.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\sv.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\te.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\te.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\th.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\th.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\tk.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\tk.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\tr.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\tr.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\ug.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\ug.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\uk.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\uk.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\vi.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\vi.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\zh-CN.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\zh-CN.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\i18n\\zh-TW.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\i18n\\zh-TW.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\select2.full.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\select2.full.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\select2.full.min.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\select2.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\owner\\source\\repos\\Emirate\\Emirate\\wwwroot\\select2-develop\\dist\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\select2-develop\\dist\\js\\select2.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Emirate.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Emirate.props",
+      "PackagePath": "build\\Emirate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Emirate.props",
+      "PackagePath": "buildMultiTargeting\\Emirate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Emirate.props",
+      "PackagePath": "buildTransitive\\Emirate.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

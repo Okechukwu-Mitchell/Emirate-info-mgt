@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Emirate University College</title>
+    <link rel="icon" type="image/x-icon" href="/images/euclogo2.ico">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   @* <link href="~/info.mgt.sys/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="~/info.mgt.sys/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/info.mgt.sys/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/info.mgt.sys/css/bootstrap-grid.min.css" rel="stylesheet" />*@
+   
+</head>
+
+<body>
+    <header>
+        <nav class=" nav navbar navbar-expand-sm navbar-dark">
+            <a class="navbar-brand ml-2" asp-controller="Home" asp-action="Index">
+                <img src="/images/euclogo1copy.png" alt="logo" width="70" >
+            </a>
+
+            <ul class="navbar-nav me-auto text-dark">
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Account" asp-action="Register">Register</a>
+                </li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Account" asp-action="Logout">Logout</a>
+                    </li>
+                }
+                else
+                {
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Account" asp-action="Login">Login</a>
+                </li>
+                }
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Account" asp-action="ContactUs">Contact Us</a>
+                </li>
+                @*<li>
+                    <a class="btn btn-primary mr-2 text-decoration-none" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                            Register
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item nav-link text-black" asp-area="" asp-controller="Account" asp-action="Register">Student</a>
+                              <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black" asp-area="" asp-controller="Account" asp-action="AdminRegister">Admin</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Login
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item nav-link text-black" asp-area="" asp-controller="Account" asp-action="Login">Student</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-black" asp-area="" asp-controller="Account" asp-action="AdminLogin">Admin</a>
+                        </div>
+                    </div>
+                </li>*@
+            </ul>
+
+            <form class="d-flex">
+                <input class="form-control me-sm-2" type="search" placeholder="Search" spellcheck="false" data-ms-editor="true">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+
+    
+        <nav class="navbar navbar-expand-sm navbar-dark navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-0">
+             
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="container-fluid" id="nbar1">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Emirate" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Emirate" asp-action="Departments">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Emirate" asp-action="Admission">Admission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Emirate" asp-action="Academics">Academics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Emirate" asp-action="Research">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Emirate" asp-action="Library">Library</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Emirate" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Emirate" asp-action="Services">Services</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+        </nav>
+  
+    </header>
+
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+    <footer class="border-top footer text-white">
+        &copy; 2023 - Emirate University College -
+        <div class="row">
+        <div class=" col">
+            
+            We are delighted to welcome you to a top institution with a drive to effect positive academic, technological and socioeconomic changes in Nigeria.
+            <a asp-area="" asp-controller="Home" asp-action="Home"></a>
+        </div >
+        <div class="col" style="display:flex;">
+           <h1>Connect With Us</h1> <br />
+           <a href="#" class="fa fa-facebook"></a> <br />
+           <a href="#" class="fa fa-twitter"></a> <br />
+           <a href="#" class="fa fa-google"></a> <br />
+           <a href="#" class="fa fa-linkedin"></a> <br />
+        </div>
+        </div>
+            
+    </footer>
+ 
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/info.mgt.sys/js/popper.min.js"></script>
+    <script src="~/info.mgt.sys/js/jquery.slim.min.js"></script>
+    <script src="~/info.mgt.sys/js/bootstrap.bundle.js"></script>
+    <script src="~/info.mgt.sys/js/bootstrap.bundle.min.js"></script>
+    <script src="~/info.mgt.sys/js/bootstrap.js"></script>
+    <script src="~/info.mgt.sys/js/bootstrap.min.js"></script>
+    <script src="~/js/sweetalert2.all.min.js"></script>
+    <script src="~/js/sweetalert.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+
+   @* <script>
+        //MenuToggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function () {
+            debugger
+            navigation.classList.toggle('active')
+        }
+        //add hovered class in selected list item
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classLists.remove('hovered'));
+            this.classLists.add('hovered');
+        }
+        //list.forEach((item) =>
+        //    item.addEventListener('mouseover', activeLink));
+    </script>*@
+</body>
+</html>

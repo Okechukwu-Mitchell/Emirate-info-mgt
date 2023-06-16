@@ -1,0 +1,196 @@
+﻿@{
+    ViewData["Title"] = "UserDashBoard";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+	<!--main-->
+	<div class="main">
+		<div class="topbar">
+			<div class="toggle">
+				<ion-icon name="menu-outline"></ion-icon>
+			</div>
+			<!--search-->
+			<div class="search">
+				<label>
+					<input type="text" placeholder="Search here">
+					<ion-icon name="search-outline"></ion-icon>
+				</label>
+			</div>
+			<!--userImg-->
+			<div class="user">
+				<img src="/images/user1.jpeg" alt="user">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<div class="content container-fluid" style="margin-top: -39px;">
+
+		<!-- Page Header -->
+		<div class="page-header">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3 class="page-title">Welcome!!</h3>
+					
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item active">User Dashboard</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Page Header -->
+
+
+		<!--cards-->
+
+		<div class="row" id="userdbd-row-1">
+			<div class="col card m-2">
+				<span class="card-title m-0"><i class="fa fa-university" style="color:#999;height:40px; width:40px"></i></span>
+				<img class="card-img-top" src="/images/77.jpg" alt="Card image"style="width:100%">
+				<div class="card-body">
+					<div>
+						<div class="cardName ">School Gist<ion-icon class="m-1" name="eye-outline"></ion-icon></div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col card m-3" style="width: 15rem;">
+				<div class="card-body">
+					<span class="dash-widget-icon"><i class="fa fa-home" style="color:#999"></i></span>
+					<div class="dash-widget-info">
+						<h2>112</h2>
+						<span>Departments</span>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col card m-3">
+				<div class="card-body">
+					<span class="dash-widget-icon"><i class="fa fa-calendar" style="color:#999"></i></span>
+					<div class="dash-widget-info">
+						<h2>29</h2>
+						<span>Events & Holiday</span>
+					</div>
+				</div>
+			</div>
+			<div class="col card m-3">
+				<div class="card-body">
+					<span class="dash-widget-icon"><i class="fa fa-users" style="color:#999"></i></span>
+					<div class="dash-widget-info">
+						<h3>218</h3>
+						<span>Employees</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="userdbd-row-2">
+			<div class="col card m-3">
+			<div class="card-body">
+				<h5 class="card-title text-primary"><b>Exam Scores & Records</b></h5>
+				<h6 class="card-subtitle mb-2 text-muted">Results</h6>
+				<p class="card-text">Some quick example text to build on the ... and make up the bulk of the ... content.</p>
+				
+			</div>
+		</div>
+		<div class="col card m-3" style="width: 18rem;">
+			<div class="card-body">
+				<h5 class="text-primary"><b>Fees & Dues</b></h5>
+				<p class="card-text">Some quick example text to build on the ... and make up the bulk of the ... content.</p>
+			</div>
+		</div>
+		
+		
+		
+
+
+
+		@*<div class="row">
+			<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+				<div class="card dash-widget">
+					<div class="card-body">
+						<span class="dash-widget-icon"><i class="fa fa-university" style="color:#999;height:20px; width:20px"></i></span>
+						<div class="dash-widget-info">
+							<h2>21</h2>
+							<span>Faculties</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+				<div class="card dash-widget">
+					<div class="card-body">
+						<span class="dash-widget-icon"><i class="fa fa-home" style="color:#999"></i></span>
+						<div class="dash-widget-info">
+							<h2>112</h2>
+							<span>Departments</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+				<div class="card dash-widget">
+					<div class="card-body">
+						<span class="dash-widget-icon"><i class="fa fa-calendar" style="color:#999"></i></span>
+						<div class="dash-widget-info">
+							<h2>37</h2>
+							<span>Events & Holiday</span>
+						</div>
+					</div>
+				</div>
+			</div>*@
+			@*<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+				<div class="card dash-widget">
+					<div class="card-body">
+						<span class="dash-widget-icon"><i class="fa fa-user" style="color:#999"></i></span>
+						<div class="dash-widget-info">
+							<h3>218</h3>
+							<span>Employees</span>
+						</div>
+					</div>
+				</div>
+			</div>*@
+		</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+    <!--main-->
+    @*<div class="main">
+        <div class="row">
+            <div class="Col">
+                <div class="card">
+                    <h2>Welcome</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="Col">
+                <div class="card">
+                    <h2>Welcome</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="Col">
+                <div class="card">
+                    <h2>Welcome</h2>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+
+
+
+
