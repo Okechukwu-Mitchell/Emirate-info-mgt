@@ -53,7 +53,8 @@ namespace Emirate.Helper
                     RegNumber = applicationUserViewModel.RegNumber,
                     GenderId = applicationUserViewModel.GenderId,
                     UserName = applicationUserViewModel.Email,
-                    Email = applicationUserViewModel.Email
+                    Email = applicationUserViewModel.Email,
+                    UserRole = applicationUserViewModel.Role
 
                     
                 };

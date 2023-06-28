@@ -716,3 +716,15 @@ function GetCourseByID(Id) {
 	});
 
 
+$('#departmentId').change(function(){ 
+	debugger
+	let deptName = $("#departmentId").find(":selected").text();
+	let prefix = deptName.split('/');
+	let result = prefix[prefix.length - 1];
+	const year = new Date().getFullYear().toString().substr(-2);
+	const randomDigits = Math.floor(Math.random() * 90000) + 10000;
+
+	$('#regNo').val(`${result}/${year}/${randomDigits}`);
+});
+
+

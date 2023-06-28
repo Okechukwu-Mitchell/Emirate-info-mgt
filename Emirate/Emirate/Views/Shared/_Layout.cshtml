@@ -30,9 +30,26 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Welcome</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" asp-controller="Account" asp-action="Register">Register</a>
-                </li>
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-action="AdminDashboard" asp-controller="Admin">Dashboard</a>
+                    </li>
+                }
+                else if(User.IsInRole("User"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("UserDashBoard", "User")">Dashboard</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Account" asp-action="Register">Register</a>
+                    </li>
+                }
+                
                 @if (User.Identity.IsAuthenticated)
                 {
                     <li class="nav-item">
@@ -45,34 +62,30 @@
                     <a class="nav-link text-white" asp-controller="Account" asp-action="Login">Login</a>
                 </li>
                 }
+
+                    
+                @*@if (User.IsInRole("User"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("UserLogout", "Account")">Logout</a>
+                    </li>
+                }
+                else if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("AdminLogout", "Account")">Logout</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Account" asp-action="Login">Login</a>
+                    </li>
+                }*@
+ 
                 <li class="nav-item">
                     <a class="nav-link text-white" asp-controller="Account" asp-action="ContactUs">Contact Us</a>
                 </li>
-                @*<li>
-                    <a class="btn btn-primary mr-2 text-decoration-none" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                            Register
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item nav-link text-black" asp-area="" asp-controller="Account" asp-action="Register">Student</a>
-                              <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-black" asp-area="" asp-controller="Account" asp-action="AdminRegister">Admin</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            Login
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item nav-link text-black" asp-area="" asp-controller="Account" asp-action="Login">Student</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-black" asp-area="" asp-controller="Account" asp-action="AdminLogin">Admin</a>
-                        </div>
-                    </div>
-                </li>*@
             </ul>
 
             <form class="d-flex">

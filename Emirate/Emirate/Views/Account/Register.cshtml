@@ -4,6 +4,15 @@
 	Layout = "~/Views/Shared/_AccountLayout.cshtml";
 }
 
+@if (TempData["Message"] != null)
+{
+	<div class="col-sm-6 col-xm-6 col-md-10 col-lg-10 col-xl-10 m-auto p-3">
+		<div class="alert alert-success alert-dismissible fade show">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Success!</strong> @TempData["Message"]
+		</div>
+	</div>
+}
 
 <div class="container d-flex justify-content-sm-center">
 	<div class="card  col-md-10 col-sm-4" id="regs">
@@ -49,26 +58,25 @@
 				</div>
 				
 
-
 				<div class="row form-group">
 					<div class="col">
 						<label>Department:</label>
-						<select class="form-control" asp-for="DepartmentId" asp-items="@(new SelectList(@ViewBag.Department, "Id", "Name" ))" style="border-radius:0px;">
+						<select class="form-control" id="departmentId" onchange="generateToken()" asp-for="DepartmentId" asp-items="@(new SelectList(@ViewBag.Department, "Id", "Name" ))" style="border-radius:0px;">
 						</select>
 					</div>
-
+					
 					<div class="col">
 						<label style="font-size: 18px" class="">  Level:</label> <br />
-						<select class="form-control" id="edit_cous_Level" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
+						<select class="form-control" asp-for="LevelId" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
 						</select>
 
-						<select class="form-control" id="edit_cous_Level" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
-						</select>
+						@*<select class="form-control" id="edit_cous_Level" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
+						</select>*@
 					</div>
 
 					<div class="col">
 						<label>RegNumber:</label>
-						<input type="text" asp-for="RegNumber" class="form-control" placeholder="RegNumber">
+						<input type="text" readonly asp-for="RegNumber" id="regNo" class="form-control" placeholder="RegNumber">
 					</div>
 				</div>
 

@@ -3,8 +3,10 @@ using Emirate.Enum;
 using Emirate.IHelper;
 using Emirate.Models;
 using Emirate.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace Emirate.Controllers
 {
@@ -56,15 +58,15 @@ namespace Emirate.Controllers
 				}
 				return View();
 			}
-			catch (Exception ex)
-			{
+            catch (Exception ex)
+            {
 				throw ex;
 			}
 		}
 
 
-
-		public IActionResult UserDashBoard()
+        [Authorize(Roles = "User")]
+        public IActionResult UserDashBoard()
 		{
 			return View();
 		}

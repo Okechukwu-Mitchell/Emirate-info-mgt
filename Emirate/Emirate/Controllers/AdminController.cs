@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System.Reflection.Metadata;
 using System.Security.Policy;
 using System.Xml.Linq;
 
@@ -23,7 +24,7 @@ namespace Emirate.Controllers
         private readonly IUserHelper _userHelper;
 		private readonly IDropdownHelper _dropdownHelper;
 		private readonly IDescriptionHelper _descriptionHelper;
-
+        private readonly IEmailHelper _emailHelper;
         public AdminController(ApplicationDb context, IUserHelper userHelper, IDropdownHelper dropdownHelper,  IDescriptionHelper descriptionHelper, IAdminHelper adminHelper)
         {
 			_context = context;
@@ -40,10 +41,46 @@ namespace Emirate.Controllers
         {
             return View();
         }
+
+        [Authorize(Roles = "Admin")]
         public IActionResult AdminDashBoard()
 		{
-           var jjj = User.Identity.Name;
-			return View();
+           var fac = _context.Faculty.ToList();
+           var dept = _context.Departments.ToList();
+           var user = _context.Applications.ToList();
+
+			var dashboard = new DashboardViewModel
+			{
+				faculty = fac,
+				department = dept,
+				applicationUser = user,
+			};
+
+			return View(dashboard);
+		}
+	
+
+		public IActionResult Students()
+		{
+            ViewBag.Level = _dropdownHelper.DropdownOfLevels();
+            ViewBag.Gender = _dropdownHelper.GetDropdownByKey(DropDownKey.Gender).Result;
+            ViewBag.Department = _dropdownHelper.GetDepartmentDropdown();
+
+            var user = _context.Applications.Where(c => !c.IsDeactivated && !c.IsAdmin).Include(d => d.Department).Include(b => b.Level).Include(g => g.Gender).ToList();
+            if (user.Count > 0)
+            {
+                var data = new ApplicationUserViewModel()
+                {
+                    Applications = user,
+                };
+                return View(data);
+            }
+            //var applicationModel = _adminHelper.GetListOfStudent();
+            //if (applicationModel != null)
+            //{
+            //    return View(applicationModel);
+            //}
+            return View();
 		}
 
         [HttpGet]
@@ -482,7 +519,7 @@ namespace Emirate.Controllers
                 }
                 return Json(new { isError = true, msg = "Unable to Add" });
             }
-            return Json(new { isError = true, msg = "Error Occured" });
+            return Json(new { isError = true, msg = "Error Occurred" });
         }
 
 
@@ -520,7 +557,7 @@ namespace Emirate.Controllers
                 }
                 return Json(new { isError = true, msg = "Unable to Update" });
             }
-            return Json(new { isError = true, msg = "Error Occured" });
+            return Json(new { isError = true, msg = "Error Occurred" });
 
         }
 
@@ -579,7 +616,6 @@ namespace Emirate.Controllers
         //    }
         //    return View(obj);
         //}
-
 
     }
 }

@@ -19,18 +19,19 @@ namespace Emirate.Helper
             _descriptionHelper = descriptionHelper;
 
         }
-		public List<CommonDropdowns> DropdownOfLevels()
+		public List<Level> DropdownOfLevels()
 		{
 			try
 			{
-				var common = new CommonDropdowns()
+				var common = new Level()
 				{
 					Id = 0,
 					Name = "--Select--"
 				};
 				var ListOfLevels = _context.Levels.Where(s => s.Id > 0 && !s.Deleted).Include(f => f.Department).ToList();
-               
-				var drp = ListOfLevels.Select(s => new CommonDropdowns
+                var allLevels = ListOfLevels.DistinctBy(h => h.Name);
+
+                var drp = allLevels.Select(s => new Level
 				{
 					Id = s.Id,
 					Name = s.Name,

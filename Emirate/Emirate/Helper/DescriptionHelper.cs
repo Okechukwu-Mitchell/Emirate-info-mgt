@@ -4,6 +4,7 @@ using Emirate.IHelper;
 using Emirate.Models;
 using Emirate.ViewModels;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using System.Reflection;
 
@@ -63,6 +64,65 @@ namespace Emirate.Helper
             {
                 throw ex;
             }
+        }
+
+
+        public ApplicationUser EditUser(ApplicationUserViewModel userDetails)
+        {
+            try
+            {
+                if (userDetails != null)
+                {
+                    var user = _context.Applications.Where(c => c.Id == userDetails.UserId && !c.IsDeactivated).Include(g => g.Gender).Include(h => h.Department).Include(m => m.Level).FirstOrDefault();
+                    if (user != null)
+                    {
+                        user.FirstName = userDetails.FirstName;
+                        user.MiddleName = userDetails.MiddleName;
+                        user.LastName = userDetails.LastName;
+                        user.UserName = userDetails.UserName;
+                        user.GenderId = userDetails.GenderId;
+                        user.DepartmentId = userDetails.DepartmentId;
+                        user.LevelId = userDetails.LevelId;
+                        user.PhoneNumber = userDetails.PhoneNumber;
+                        user.DateCreated = DateTime.Now;
+
+                        _context.Applications.Update(user);
+                        _context.SaveChanges();
+                        return user;
+                    }; 
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public bool DeleteUser(string Id)
+        {
+            try
+            {
+                if (Id != null)
+                {
+                    var user = _context.Applications.Where(c => c.Id == Id).FirstOrDefault();
+                    if (user != null)
+                    {
+                        user.IsDeactivated = true;
+
+                        _context.Applications.Update(user);
+                        _context.SaveChanges();
+                        return true;
+                    };
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }

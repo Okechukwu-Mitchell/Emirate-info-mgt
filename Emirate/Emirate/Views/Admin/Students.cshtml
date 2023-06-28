@@ -1,0 +1,204 @@
+﻿@model Emirate.ViewModels.ApplicationUserViewModel
+@{
+    ViewData["Title"] = "Students";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    body {
+        counter-reset: Serial; /* / Set the Serial counter to 0 /*/
+    }
+
+    tr td:first-child:before {
+        counter-increment: Serial; /* / Increment the Serial counter /*/
+        content: counter(Serial); /*  / Display the counter /*/
+    }
+</style>
+
+<div class="container col-lg-12 col-md-12 col-sm-12">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Students</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Dashboard</a></li>
+                    <li class="breadcrumb-item active">User Information</li>
+                </ul>
+            </div>
+            <div class="col-auto float-right ml-auto">
+                <a href="@Url.Action("Register", "Account")" class="btn btn-primary text-decoration-none p-1" id="common_button"><i class="fa fa-plus p-0 m-0"></i> Add Student</a>
+            </div>
+        </div>
+    </div>
+  
+
+
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <table class="table display table-bordered table-striped table-hover" id="myTable" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="p-0">S/N</th>
+                    <th class="p-0">Student Name</th>
+                    <th class="p-0">Level/Department</th>
+                    <th class="p-0">Role</th>
+                    <th class="p-0">Reg No.</th>
+                    <th class="p-0">Username</th>
+                    <th class="p-0">DOB</th>
+                    <th class="p-0">Gender</th>
+                    <th class="p-0">Phone No.</th>
+                    <th class="p-0">Date Created</th>
+                    <th class="">Action</th>
+                </tr>
+            </thead>
+            @if (Model != null && Model.Applications.Count() > 0)
+            {
+                <tbody>
+                    @foreach (var item in Model.Applications)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>@item.FullName</td>
+                            <td>@item.Level?.Name <b>/</b> <span>@item.Department?.Name</span></td>
+                            <td>@item.UserRole</td>
+                            <td>@item.RegNumber</td>
+                            <td>@item.Email</td>
+                            <td>@item.DateOfBirth.ToString("d")</td>
+                            <td>@item.Gender?.Name</td>
+                            <td>@item.PhoneNumber</td>
+                            <td>@item.DateCreated.ToString("d")</td>
+                            <td>
+                                <span><a data-toggle="modal" data-target="#editUserModal" onclick="GetUserByID('@item.Id')" class="text-primary p-1"><i class="fa-solid fa-pen-to-square"></i></a> </span>
+                                <span><a data-toggle="modal" data-target="#deleteUserModal" onclick="GetUserID('@item.Id')" class="text-danger p-1"><i class="fa-solid fa-trash-can"></i></a></span>
+                            </td>
+
+                        </tr>
+
+                    }
+
+                </tbody>
+
+            }
+
+        </table>
+
+    </div>
+
+
+
+    <!--Edit User Modal-->
+    <div class="modal fade" id="editUserModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header p-1 border-bottom-0">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close border-0 text-danger bg-white p-2" data-dismiss="modal">&times;</button>
+                </div>
+
+                <input id="userEdit_Id" class="form-control" hidden />
+                <div class="form-group row">
+                    <h3 class="text-center modal-title">Edit User Details</h3>
+                </div>
+
+                <div class="mx-auto w-100 p-3">
+
+                    <div class="row w-100">
+                        <div class="col form-group">
+                            <label> FirstName :</label>
+                                <input id="firstName" class="form-control">
+                            <br />
+                        </div>
+                        
+                        <div class="col form-group">
+                            <label>MiddleName :</label>
+                                <input id="middleName" class="form-control">
+                             <br />
+                        </div>
+                    </div>
+                   
+                    <div class="row w-100">
+                        <div class="col form-group">
+                            <label>LastName :</label>
+                                <input id="lastName" class="form-control">
+                            <br />
+                        </div>
+                    
+                        <div class="col form-group">
+                            <label>Username : </label>
+                                <input id="username" class="form-control" readonly>
+                            <br />
+                        </div>
+                    </div>
+
+                    <div class="row  w-100">
+                        <div class="col-6 form-group">
+                            <label>Level :</label>
+                                <select class="form-control" id="levelId" asp-for="LevelId" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
+                                </select>
+                             <br />
+                        </div>
+                        <div class="col form-group">
+                            <label>Phone Number :</label>
+                                <input id="phoneId" class="form-control">
+                            <br />
+                        </div>
+                    </div>
+
+                    <div class="row  w-100">
+                        <div class="col form-group">
+                            <label> Department : </label>
+                            <select class="form-control" id="departmentId" asp-for="DepartmentId" asp-items="@(new SelectList(@ViewBag.Department, "Id", "Name"))" style="border-radius:0px;">
+                            </select>
+                            <br />
+                        </div>
+                       
+                        <div class="col form-group ">
+                            <label> Gender :</label>
+                                <select class="form-control" id="genderId" asp-for="GenderId" asp-items="@(new SelectList(@ViewBag.Gender ,"Id", "Name" ))" style="border-radius:0px;">
+                                </select>
+                             <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a onclick="EditUser('Id')" class="btn btn-secondary d-flex mx-auto px-5 m-2 w-25 text-decoration-none  common_button" id="common_button">Update</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  
+
+        <!--Delete Courses Modal-->
+    <div class="modal custom-modal fade" id="deleteUserModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header p-1 border-bottom-0">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close border-0 text-danger bg-white p-2" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="form-group row">
+                    <h3 class="text-center">Delete Department </h3>
+                    <input class="form-control" type="text" id="userDelete_Id" hidden>
+                    <p class="text-center text-muted modal-title"> Are you sure you want to delete this? </p>
+                </div>
+
+                <div class="modal-btn delete-action mb-3">
+                    <div class="row">
+                        <div class="col-6 text-end">
+                            <a href="javascript:void(0);" class="btn continue-btn p-2 w-50" onclick="DeleteUser('DELETE', 'Id')" id="common_button" style="border-radius: 15px;">Delete</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="javascript:void(0);" data-dismiss="modal" class="btn btn-secondary cancel-btn p-2 w-50" style="border-radius: 15px;">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

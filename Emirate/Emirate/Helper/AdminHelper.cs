@@ -24,7 +24,7 @@ namespace Emirate.Helper
         }
         public async Task<ApplicationUser> FindUserByEmailAsync(string email)
         {
-            return await _userManager.Users.Where(x => x.Email == email).FirstOrDefaultAsync();
+            return await _userManager.FindByEmailAsync(email);
         }
         public async Task<ApplicationUser> FindByUserNameAsync(string username)
         {
@@ -62,13 +62,16 @@ namespace Emirate.Helper
                         Image = base64,
                         DateCreated = DateTime.Now,
                         IsDeactivated = false,
+                        UserRole = model.Role,
                         IsAdmin = true,
                     };
                     var result = _userManager.CreateAsync(adminUser, model.Password).Result;
-                    if (result.Succeeded)
-                    {
-                        return adminUser;
-                    }
+					if (result.Succeeded)
+					{
+						await _userManager.AddToRoleAsync(adminUser, model.Role);
+						return adminUser;
+					}
+					
                 }
                 return null;
             }
@@ -348,5 +351,46 @@ namespace Emirate.Helper
             }
 
         }
+
+        //public List<ApplicationUserViewModel> GetListOfStudent()
+        //{
+        //    try
+        //    {
+        //        var newApplication = new List<ApplicationUserViewModel>();
+        //        var application = _context.Applications.Where(y => y.Id != null && !y.IsDeactivated).ToList();
+        //        if (application != null)
+        //        {
+        //            foreach (var item in application)
+        //            {
+        //                var student = new ApplicationUserViewModel();
+
+        //                student.Id = item.Id;   
+        //                student.Address = item.Address; 
+        //                student.PhoneNumber = item.PhoneNumber;
+        //                student.UserName = item.UserName;
+        //                student.Role = item.UserRole;
+        //                student.StateId = item.StateId;
+        //                student.DepartmentId = item.DepartmentId;
+        //                student.Departments = item.Department;
+        //                student.LastName = item.LastName;
+        //                student.Levels = item.Level;
+        //                student.LevelId = item.LevelId; 
+        //                student.MiddleName = item.MiddleName;
+        //                student.FirstName = item.FirstName;
+
+        //                newApplication.Add(student);
+        //            }
+        //            return newApplication;
+        //        }
+        //        return newApplication;
+        //    }
+        //    catch (Exception exp)
+        //    {
+        //        throw exp;
+        //    }
+
+        //}
+
+
     }
 }
