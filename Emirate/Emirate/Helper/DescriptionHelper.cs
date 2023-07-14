@@ -79,7 +79,7 @@ namespace Emirate.Helper
                         user.FirstName = userDetails.FirstName;
                         user.MiddleName = userDetails.MiddleName;
                         user.LastName = userDetails.LastName;
-                        user.UserName = userDetails.UserName;
+                        user.RegNumber = userDetails.RegNumber;
                         user.GenderId = userDetails.GenderId;
                         user.DepartmentId = userDetails.DepartmentId;
                         user.LevelId = userDetails.LevelId;

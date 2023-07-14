@@ -20,7 +20,11 @@ namespace Emirate.IHelper
 		bool Courses(CourseViewModel courseDetail);
 		bool EditCourses(CourseViewModel courseDetail);
 		bool DeleteCourses(int id);
-		//List<ApplicationUserViewModel> GetListOfStudent();
-		public Task<ApplicationUser> AdminRegister(ApplicationUserViewModel model, string base64);
+		bool SchoolFee(SchoolFeesViewModel payment);
+        //List<ApplicationUserViewModel> GetListOfStudent();
+        public Task<ApplicationUser> AdminRegister(ApplicationUserViewModel model, string base64);
+		List<StudentPaymentViewModel> SchoolMoney();
+		StudentPayment ApproveDocument(int id);
+		StudentPayment DeclineDocument(int id);
     }
 }

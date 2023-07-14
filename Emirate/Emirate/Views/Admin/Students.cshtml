@@ -40,7 +40,7 @@
                     <th class="p-0">S/N</th>
                     <th class="p-0">Student Name</th>
                     <th class="p-0">Level/Department</th>
-                    <th class="p-0">Role</th>
+                   @* <th class="p-0">Role</th>*@
                     <th class="p-0">Reg No.</th>
                     <th class="p-0">Username</th>
                     <th class="p-0">DOB</th>
@@ -59,7 +59,7 @@
                             <td></td>
                             <td>@item.FullName</td>
                             <td>@item.Level?.Name <b>/</b> <span>@item.Department?.Name</span></td>
-                            <td>@item.UserRole</td>
+                            @*<td>@item.UserRole</td>*@
                             <td>@item.RegNumber</td>
                             <td>@item.Email</td>
                             <td>@item.DateOfBirth.ToString("d")</td>
@@ -122,10 +122,10 @@
                                 <input id="lastName" class="form-control">
                             <br />
                         </div>
-                    
+
                         <div class="col form-group">
-                            <label>Username : </label>
-                                <input id="username" class="form-control" readonly>
+                            <label>RegNumber : </label>
+                                <input id="regNo" class="form-control">
                             <br />
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                                 <select class="form-control" id="genderId" asp-for="GenderId" asp-items="@(new SelectList(@ViewBag.Gender ,"Id", "Name" ))" style="border-radius:0px;">
                                 </select>
                              <br />
-                        </div>
+                        </div> 
                     </div>
                 </div>
 

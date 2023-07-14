@@ -31,32 +31,32 @@
 	</div>
 
 
-<div >
-			<form method="post" class="mb-5">
+<div>
+	<form method="post" class="mb-5 p-2">
 
 		<div class="row form-group mb-3">
 			<div class="col">
 				<label>First name:</label>
-				<input type="text" class="form-control" asp-for="FirstName" placeholder="First name">
+				<input type="text" class="form-control" asp-for="FirstName" placeholder="First name" required>
 			</div>
 			<div class="col">
 				<label>Middle name:</label>
-				<input type="text" class="form-control" asp-for="MiddleName" placeholder="Middle name">
+				<input type="text" class="form-control" asp-for="MiddleName" placeholder="Middle name" required>
 			</div>
 			<div class="col">
 				<label>Last name:</label>
-				<input type="text" class="form-control" asp-for="LastName" placeholder="Last name">
+				<input type="text" class="form-control" asp-for="LastName" placeholder="Last name" required>
 			</div>
 		</div>
 
 		<div class="row form-group mb-3">
 			<div class="col">
 				<label>Residential Address:</label>
-				<input type="text" class="form-control" asp-for="Address" placeholder="Residential Address">
+				<input type="text" class="form-control" asp-for="Address" placeholder="Residential Address" required>
 			</div>
 			<div class=" col">
 				<label>Email Address:</label>
-				<input type="email" asp-for="Email" class="form-control" placeholder="Enter email">
+				<input type="email" asp-for="Email" class="form-control" placeholder="Enter email" required>
 				<span asp-validation-for="Email" class="text-danger"></span>
 			</div>
 
@@ -64,22 +64,25 @@
 				<label>Gender:</label>
 				<select class="form-control" asp-for="GenderId" asp-items="@(new SelectList(@ViewBag.Gender ,"Id", "Name" ))" style="border-radius:0px;">
 				</select>
+				<span asp-validation-for="Gender" class="text-danger"></span>
 			</div>
 		</div>
 
 		<div class="row form-group mb-3">
 			<div class=" col form-group">
 				<label>Password:</label>
-				<input type="password" asp-for="Password" class="form-control" placeholder="Password">
+				<input type="password" asp-for="Password" class="form-control" placeholder="Password" minlenght="7" required>
+				<span asp-validation-for="Password" class="text-danger"></span>
 			</div>
 
 			<div class=" col form-group ">
 				<label>Confirm Password:</label>
-				<input type="password" asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password">
+				<input type="password" asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" required>
+				<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 			</div>
 			<div class="col">
 				<label>Phone no:</label>
-				<input type="tel" asp-for="PhoneNumber" class="form-control" placeholder="">
+				<input type="tel" asp-for="PhoneNumber" class="form-control" placeholder="" required>
 			</div>
 		</div>
 

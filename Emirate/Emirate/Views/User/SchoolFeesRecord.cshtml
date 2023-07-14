@@ -1,0 +1,110 @@
+﻿@model Emirate.ViewModels.StudentPaymentViewModel;
+@{
+    ViewData["Title"] = "SchoolFeesRecord";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<style>
+    .card{
+        box-shadow: 7px 7px 6px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        
+    }
+
+    
+</style>
+
+
+<div class="container col-lg-12 col-md-12 col-sm-12 my-4">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">School Fees And Payment</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Dashboard</a></li>
+                    <li class="breadcrumb-item active">Records</li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <div class="container ">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-8 col-md-8 col-lg-8 ">
+                <div class="card mt-3">
+                <div class="card-header">
+                    <h3 class="card-title text-center">School Fees Record </h3>
+                </div>
+                    <div class="card-body">
+                        
+
+                        @if (Model != null)
+                        {
+                            <div class="col">
+					            <label>Name : @Model.StudentName <span></span></label><br />
+					            <label>Username : @Model.Username  </label><br />
+					            <label>Faculty : @Model.Faculty?.Name</label><br />
+					            <label>Department : @Model.Department?.Name  </label><br />
+					            <label>Reg Number : @Model.RegNumber</label><br />
+					            <label>Level : @Model.Level?.Name</label><br />
+                                <label>School fees (₦): @Model.Amount</label><br />
+					            <label>Payment Status : @Model.Status</label> <br />
+					            <label>Payment Date : @Model.DatePaid.ToString("D")</label><br />
+					            @*<label>Payment Date : @DateTime.Now.ToString()</label><br />*@
+                            </div>
+
+                        }
+                        else
+                        {
+                            <span>You Have Not Paid School Fees</span>
+                        }
+                        <div class="text-center ">
+                            <a href="@Url.Action("PaySchoolFees", "User")" class=" btn mx-auto w-25 p-2 common_button text-decoration-none  mt-4">Pay Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@*<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Vertical Table</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <th>Header 1</th>
+                                    <td>Data 1</td>
+                                </tr>
+                                <tr>
+                                    <th>Header 2</th>
+                                    <td>Data 2</td>
+                                </tr>
+                                <tr>
+                                    <th>Header 2</th>
+                                    <td>Data 2</td>
+                                </tr>
+                                <tr>
+                                    <th>Header 2</th>
+                                    <td>Data 2</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+*@

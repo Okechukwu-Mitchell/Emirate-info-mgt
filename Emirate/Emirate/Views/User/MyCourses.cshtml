@@ -1,0 +1,192 @@
+﻿@model IEnumerable<Emirate.ViewModels.StudentCourseViewModel>
+@{
+    ViewData["Title"] = "MyCourses";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+
+    var user = Model.FirstOrDefault()?.StudentName;
+}
+
+
+
+<div class="container col-lg-12 col-md-12 col-sm-12 my-4">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Courses </h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Dashboard</a></li>
+                    <li class="breadcrumb-item active">My Courses</li>
+                </ul>
+            </div>
+             <div class="col-auto float-right ml-auto">
+                <a asp-action="MyCoursesReg" asp-controller="User" class="btn text-decoration-none common_button p-1">Register</a>
+            </div>
+        </div>
+    </div>
+
+
+     @*   <!-- Assuming you have checkboxes for each course with name "selectedCourses[]" -->
+    <form id="courseForm" action="/User/MyCoursesReg">
+        @foreach (var course in Model)
+        {
+            <div>
+                <label>
+                    <input type="checkbox" name="selectedCourses[]" value="@course.Id" /> @course.CourseName || <span>@course.CourseUnit</span>
+                </label>
+            </div>
+        }
+        <button type="submit">Submit</button>
+    </form>
+*@
+
+   
+
+
+    <h2>Student Course Registration</h2>
+
+    <p>Welcome, <b> @user!</b></p>
+
+    <p>Please select the courses you wish to register:</p>
+    <p><b>Note :</b> <b>Minum</b> of 15 credits, and <b>Max</b> of 24 credits</p>
+
+
+
+    <div class="col-lg-12">
+        <table class="table display table-bordered table-striped table-hover" id="myTable" style="width:100%">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Course Name</th>
+                    <th>Department</th>
+                    <th>Level</th>
+                    <th>Semester</th>
+                    <th>Course Unit</th>
+                    <th>Date Created</th>
+                       
+                </tr>
+            </thead>
+            @if (Model != null && Model.Count() > 0)
+            {
+
+                <tbody>
+                    @foreach (var course in Model)
+                    {
+
+                        <tr>
+                            <td><input type="checkbox" name="student" value="1" onchange="calculateTotals()"></td>
+                            <td>@course.Name</td>
+                            <td>@course.Department?.Name</td>
+                            <td>@course.Level?.Name</td>
+                            <td>@course.Semester</td>
+                            <td>@course.CourseUnit</td>
+                            <td>@course.DateCreated.ToString("d")</td>
+                                
+                        </tr>
+                            
+
+                    }
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="1">Total</th>
+                        <th colspan="1">Total Checked Courses: <span id="totalCheckedCourses">0</span></th>
+                        <th colspan="3"></th>
+                        <th>Total Course Units: <span id="totalCourseUnits">0</span></th>
+                        <th colspan="1"><a href="@Url.Action("MyCourseReg","User")" class="btn common_button p-1" style="border-radius: 14px">Register</a></th>
+                    </tr>
+                </tfoot>
+
+            }
+
+        </table>
+    </div>
+
+
+    <button onclick="showSelectedCourses()" class=" p-3 common_button" style="border-radius:47px;">Show Selected Courses</button>
+
+
+
+
+
+
+       
+
+</div>
+
+ 
+
+
+
+
+
+
+
+
+    <script>
+        function calculateTotals() {
+            var checkboxes = document.getElementsByName("student");
+            var totalCheckedCourses = 0;
+            var totalCourseUnits = 0;
+
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    totalCheckedCourses++;
+                    totalCourseUnits += parseInt(checkboxes[i].parentNode.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.textContent);
+                }
+            }
+
+           
+            document.getElementById("totalCheckedCourses").textContent = totalCheckedCourses;
+            document.getElementById("totalCourseUnits").textContent = totalCourseUnits;
+
+        }
+
+
+
+
+        function showSelectedCourses() {
+            const checkboxes = document.getElementsByName('student');
+            const selectedCourses = [];
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    const row = checkboxes[i].parentNode.parentNode;
+                    const courseName = row.querySelector('td:nth-child(2)').textContent;
+                    selectedCourses.push(courseName);
+                }
+            }
+
+            // Open a new page to display the selected courses
+            const selectedCoursesWindow = window.open('', '_blank');
+            selectedCoursesWindow.document.write('<h3>Selected Courses</h3>');
+            selectedCoursesWindow.document.write('<ol>');
+
+            selectedCourses.forEach(course => {
+                selectedCoursesWindow.document.write(`<li>${course}</li>`);
+            });
+
+            selectedCoursesWindow.document.write('</ol>');
+        }
+
+
+        //function showSelectedCourses() {
+        //    var checkboxes = document.getElementsByName("student");
+        //    var selectedCourseIds = [];
+
+        //    for (var i = 0; i < checkboxes.length; i++) {
+        //        if (checkboxes[i].checked) {
+        //            selectedCourseIds.push(checkboxes[i].value);
+        //        }
+        //    }
+
+        //    if (selectedCourseIds.length > 0) {
+        //        window.location.href = "/SelectedCourses?selectedCourseIds=" + selectedCourseIds.join(",");
+        //    } else {
+        //        alert("No courses selected.");
+        //    }
+        //}
+    </script>
+
+
+

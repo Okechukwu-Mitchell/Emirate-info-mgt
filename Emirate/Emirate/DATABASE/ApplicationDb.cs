@@ -1,12 +1,10 @@
 ﻿using Emirate.Models;
-using MassTransit;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 
 namespace Emirate.DATABASE
 {
-	public class ApplicationDb : IdentityDbContext	
+    public class ApplicationDb : IdentityDbContext	
 	{
         public ApplicationDb(DbContextOptions<ApplicationDb> options):base(options)
 		{
@@ -21,7 +19,9 @@ namespace Emirate.DATABASE
 		public DbSet<SchoolFee> SchoolFees { get; set; }
 		public DbSet<StudentSchoolFeesRecord> StudentSchoolFeesRecords { get; set; }
         public DbSet<Faculty> Faculty { get; set; }
-
+        public DbSet<StudentCourseLog> StudentCourseLogs { get; set; }
+        public DbSet<StudentPayment> StudentPayments { get; set; }
+  
     }
 
 	

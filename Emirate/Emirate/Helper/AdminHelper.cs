@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
-using System.Data.Entity;
+//using System.Data.Entity;
 using System.Security.Policy;
 
 namespace Emirate.Helper
@@ -16,11 +16,12 @@ namespace Emirate.Helper
     {
         private UserManager<ApplicationUser> _userManager;
         private readonly ApplicationDb _context;
-
-        public AdminHelper(ApplicationDb context, UserManager<ApplicationUser> userManager)
+        private readonly IUserHelper _userHelper;
+        public AdminHelper(ApplicationDb context, UserManager<ApplicationUser> userManager, IUserHelper userHelper)
         {
             _userManager = userManager;
             _context = context;
+            _userHelper = userHelper;
         }
         public async Task<ApplicationUser> FindUserByEmailAsync(string email)
         {
@@ -352,6 +353,52 @@ namespace Emirate.Helper
 
         }
 
+
+
+        public bool SchoolFee(SchoolFeesViewModel payment)
+        {
+            try
+            {
+                if (payment != null)
+                {
+                    var level1Fee = new SchoolFee()
+                    {
+                        FacultyId = payment.FacultyId,
+                        DateCreated = DateTime.Now,
+                        Amount = payment.Amount1,
+                        LevelId = payment.LevelId1,
+                        PaymentStatus = payment.PaymentStatus,
+                        Active = true,
+                        Deleted = false,
+                    };
+                    _context.SchoolFees.Add(level1Fee);
+
+                    var level2Fee = new SchoolFee()
+                    {
+                        FacultyId = payment.FacultyId,
+                        DateCreated = DateTime.Now,
+                        Amount = payment.Amount2,
+                        LevelId = payment.LevelId2,
+                        PaymentStatus = payment.PaymentStatus,
+                        Active = true,
+                        Deleted = false
+                         
+                    };
+                    _context.SchoolFees.Add(level2Fee);
+                   
+
+                    _context.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        
         //public List<ApplicationUserViewModel> GetListOfStudent()
         //{
         //    try
@@ -390,6 +437,114 @@ namespace Emirate.Helper
         //    }
 
         //}
+
+        public List<StudentPaymentViewModel> SchoolMoney()
+        {
+            try
+            {
+                var allSchoolViewModel = new List<StudentPaymentViewModel>();
+                var schoolFees = _context.StudentPayments.Where(g => g.Id != 0 && !g.Deleted && g.Active)
+                .Include(g => g.ApplicationUser).Include(u => u.SchoolFees).Include(j => j.ApplicationUser.Level.Department.Faculty)
+                .ToList();
+                if (schoolFees != null && schoolFees.Count() > 0)
+                {
+                    foreach (var school in schoolFees)
+                    {
+                        var newSchool = new StudentPaymentViewModel()
+                        {
+                           Id = school.Id,
+                           Amount = school.Amount,
+                           ApplicationUser = school.ApplicationUser,
+                           SchoolFeesId = school.SchoolFeesId,
+                           ApplicationUserId = school.ApplicationUserId,
+                           DatePaid = school.DatePaid,
+                           SchoolFees = school.SchoolFees,
+                           DocumentId = school.DocumentId,
+                           FileName = school.FileName,  
+                           FilePath = school.FilePath,
+                           PaymentDate = school.PaymentDate,
+                           PaymentDocument = school.FileName,
+                           StudentName = school.StudentName,
+                           Status = school.Status,
+                           ReferenceNumber = school.ReferenceNumber,
+                           Username = school.Username,
+
+                        };
+                        allSchoolViewModel.Add(newSchool);
+                    }
+                    return allSchoolViewModel;
+                }
+                return allSchoolViewModel;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+        public StudentPayment ApproveDocument(int id)
+        {
+            try
+            {
+                if (id > 0)
+                {
+                    var app = new StudentPaymentViewModel();
+                    var student = _context.StudentPayments.Where(h => h.Id == id && h.Active && !h.Deleted && h.Status == EmirateEnums.PaymentStatus.Pending)
+                    .Include(u => u.SchoolFees).Include(s => s.ApplicationUser).FirstOrDefault();
+                    if (student != null)
+                    {
+                       
+                        student.Status = EmirateEnums.PaymentStatus.Approved;
+                       
+                        _context.StudentPayments.Update(student); 
+                        _context.SaveChanges();
+                        return student;
+                    };
+                }
+                return null;
+            }
+            catch (Exception exp)
+            {
+                throw exp;
+            }
+        }
+
+
+
+
+        public StudentPayment DeclineDocument(int id)
+        {
+            try
+            {
+                if (id > 0)
+                {
+                    var dec = new StudentPaymentViewModel();
+                    var student = _context.StudentPayments.Where(h => h.Id == id && h.Active && !h.Deleted && h.Status == EmirateEnums.PaymentStatus.Pending)
+                    .Include(u => u.SchoolFees).Include(s => s.ApplicationUser).FirstOrDefault();
+                    if (student != null)
+                    {
+                       
+                        student.Status = EmirateEnums.PaymentStatus.Declined;
+
+                        _context.StudentPayments.Update(student);
+                        _context.SaveChanges();
+                        return student;
+                    };
+                }
+                return null;
+            }
+            catch (Exception exp)
+            {
+                throw exp;
+            }
+        }
+
+
+
+
+
+
 
 
     }

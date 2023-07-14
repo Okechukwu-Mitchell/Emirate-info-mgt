@@ -5,7 +5,6 @@ using Emirate.Models;
 using Emirate.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +15,8 @@ builder.Services.AddScoped<IDescriptionHelper, DescriptionHelper>();
 builder.Services.AddScoped<IEmailHelper, EmailHelper>();
 builder.Services.AddScoped<IEmailSettings, EmailSettings>();
 builder.Services.AddScoped<IEmailServices, EmailServices>();
+//builder.Services.AddScoped<IWebHostEnvironment>();
+//builder.Services.AddScoped<IHostingEnvironment, HostingEnvironment>();
 
 // Add services to the container.
 
@@ -23,6 +24,9 @@ builder.Services.AddScoped<IEmailServices, EmailServices>();
 
 builder.Services.AddSingleton<IEmailSettings>(builder.Configuration.GetSection("EmailSettings").Get<EmailSettings>());
 
+
+//builder.Services.AddSingleton<IWebHostEnvironment>(env => new WebHostEnvironment { EnvironmentName = env.HostingEnvironment.EnvironmentName });
+builder.Services.AddMvc();
 
 builder.Services.AddDbContext<ApplicationDb>(opt => opt.UseSqlServer(
 	builder.Configuration.GetConnectionString("EmirateTB")));

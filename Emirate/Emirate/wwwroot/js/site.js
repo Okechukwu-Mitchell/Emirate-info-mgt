@@ -48,7 +48,7 @@ function EditUser() {
 	data.LevelId = $('#levelId').val();
 	data.PhoneNumber = $('#phoneId').val();
 	data.GenderId = $('#genderId').val();
-	data.Username = $('#username').val();
+	data.RegNumber = $('#regNo').val();
 	data.Firstname = $('#firstName').val();
 	data.Middlename = $('#middleName').val();
 	data.Lastname = $('#lastName').val();
@@ -101,7 +101,7 @@ function GetUserByID(Id) {
 				$("#firstName").val(data.data.firstName);
 				$("#middleName").val(data.data.middleName);
 				$("#lastName").val(data.data.lastName);
-				$("#username").val(data.data.userName);
+				$("#regNo").val(data.data.regNumber);
 				$("#genderId").val(data.data.genderId);
 			}
 
@@ -161,6 +161,43 @@ function GetUserID(Id) {
 	});
 }
 
+ // Add School Fees
+function submitFees() {
+	debugger
+	let data = {};
+	data.FacultyId = $("#facultyId").val();
+	data.LevelId1 = $("#levelId1").val();
+	data.Amount1 = $("#amount1").val();
+	data.LevelId2 = $("#levelId2").val();
+	data.Amount2 = $("#amount2").val();
+	let payment = JSON.stringify(data);
+	if (data.Faculty != "" && data.Level != "" && data.Amount != "" && data.Faculty2 != "" && data.Level2 != "" && data.Amount2 !="") {
+		debugger;
+		$.ajax({
+			type: 'POST',
+			dataType: 'json',
+			url: '/Admin/SchoolFee',
+			data: { payment: payment },
+			success: function (result) {
+				debugger
+				if (!result.isError) {
+					var url = window.location.href;
+					successAlertWithRedirect(result.msg, url)
+				}
+				else {
+					errorAlert(result.msg)
+				}
+			},
+			error: function (ex) {
+				errorAlert("Network failure, please try again");
+			}
+		});
+
+	} else {
+		errorAlert("please fill the form correctly");
+	}
+
+}
 
 
 

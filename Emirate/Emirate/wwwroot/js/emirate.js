@@ -581,9 +581,9 @@ function GetCoursesByID(Id) {
 		success: function (data) {
 			debugger
 			if (!data.isError) {
-				$("#coursesEdit_Id").val(data.data.Id);
+				$("#coursesEdit_Id").val(data.data.id);
 				$("#edit_cous_Department").val(data.data.departmentId);
-				$("#edit_cous_Level").val(data.data.levelId);
+				$("#editCousLevel").val(data.data.levelId);
 				$("#edit_cous_Semester").val(data.data.semester);
 				$("#editCoursesName").val(data.data.name);
 				$("#editCourseUnit").val(data.data.courseUnit);

@@ -14,7 +14,7 @@
 	<div class="card border-0 w-50 mx-sm-auto" id="st-prof-card">
 		<h2 class="text-center">User Details</h2>
 			<div class="col-12 float-end">
-				<a asp-controller="User" asp-action="EditProfile" asp-route-id="id" class="icon rounded-circle float-end p-1 bg-secondary" id="profedit" data-toggle="modal" data-target="#EditProfModal"><i class="fa fa-pencil mt-1 p-1 rounded" style="width:15%; height:15px;"></i></a>
+				<a asp-controller="User" asp-action="EditProfile" asp-route-id="id" class="icon rounded-circle float-end p-1 bg-secondary text-white" id="profedit" data-toggle="modal" data-target="#EditProfModal"><i class="fa fa-pencil mt-1 p-1 rounded" style="width:15px; height:15px;"></i></a>
 			</div>
 			
 		
@@ -68,16 +68,6 @@
 			<button type="button" class="close border-0 text-danger bg-white p-2" data-dismiss="modal">&times;</button>
 		</div>
 
-	@*<!-- Modal body -->
-		<div class="modal-body">
-			Modal body..
-		</div>
-
-		<!-- Modal footer -->
-		<div class="modal-footer">
-			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-		</div>*@
-
 		<div class="form-group row">
 			<h3 class="text-center modal-title">My Profile</h3>
 		</div>
@@ -89,7 +79,7 @@
 						<input type="text" hidden />
 						<label type="FirstName">
 							FirstName :
-							<input type="FirstName" class="form-control">
+							<input class="form-control">
 						</label> <br />
 					</div>
 
@@ -100,9 +90,9 @@
 						</label> <br />
 					</div>*@
 					<div class="col">
-						<label type="LastName"> LastName :
-						<input type="LastName" class="form-control">
-						</label> <br />
+						<label> LastName :</label>
+						<input class="form-control">
+						 <br />
 					</div>
 				</div>
 

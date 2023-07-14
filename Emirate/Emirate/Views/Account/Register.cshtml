@@ -26,15 +26,21 @@
 				<div class="row form-group">
 					<div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 						<label>First name:</label>
-						<input type="text" class="form-control" asp-for="FirstName" placeholder="First name">
+						<input type="text" class="form-control" asp-for="FirstName" placeholder="First name" required
+						  oninvalid="this.setCustomValidity('Please enter a first name.')"
+						  oninput="this.setCustomValidity('')">
 					</div>
 					<div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 						<label>Middle name:</label>
-						<input type="text" class="form-control" asp-for="MiddleName" placeholder="Middle name">
+						<input type="text" class="form-control" asp-for="MiddleName" placeholder="Middle name" required
+						  oninvalid="this.setCustomValidity('Please enter a middle name.')"
+						  oninput="this.setCustomValidity('')">
 					</div>
 					<div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 						<label>Last name:</label>
-						<input type="text" class="form-control" asp-for="LastName" placeholder="Last name">
+						<input type="text" class="form-control" asp-for="LastName" placeholder="Last name" required
+						  oninvalid="this.setCustomValidity('Please enter a last name.')"
+						  oninput="this.setCustomValidity('')">
 					</div>
 				</div>
 
@@ -42,18 +48,21 @@
 					<div class="col">
 
 						<label>Email Address:</label>
-						<input type="email" asp-for="Email" class="form-control" placeholder="Enter email">
+						<input type="email" asp-for="Email" class="form-control" placeholder="Enter email" required
+						  oninvalid="this.setCustomValidity('Please enter an email address.')"
+						  oninput="this.setCustomValidity('')">
 						<span asp-validation-for="Email" class="text-danger"></span>
 					</div>
 					<div class=" col">
 						<label>Date of birth:</label>
-						<input type="date" asp-for="DateOfBirth" class="form-control" placeholder="">
+						<input type="date" asp-for="DateOfBirth" class="form-control" placeholder="DOB" required>
 					</div>
 
 					<div class=" col">
 						<label class="">Gender:</label>
-						<select class="form-control" asp-for="GenderId" asp-items="@(new SelectList(@ViewBag.Gender ,"Id", "Name" ))" style="border-radius:0px;">
+						<select class="form-control" asp-for="GenderId" asp-items="@(new SelectList(@ViewBag.Gender ,"Id", "Name" ))" style="border-radius:0px;" required>
 						</select>
+						<span asp-validation-for="Gender" class="text-danger"></span>
 					</div>
 				</div>
 				
@@ -61,40 +70,41 @@
 				<div class="row form-group">
 					<div class="col">
 						<label>Department:</label>
-						<select class="form-control" id="departmentId" onchange="generateToken()" asp-for="DepartmentId" asp-items="@(new SelectList(@ViewBag.Department, "Id", "Name" ))" style="border-radius:0px;">
+						<select class="form-control" id="departmentId" onchange="generateToken()" asp-for="DepartmentId" asp-items="@(new SelectList(@ViewBag.Department, "Id", "Name" ))" style="border-radius:0px;" required>
 						</select>
+						<span asp-validation-for="Department" class="text-danger"></span>
 					</div>
 					
 					<div class="col">
 						<label style="font-size: 18px" class="">  Level:</label> <br />
-						<select class="form-control" asp-for="LevelId" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
+						<select class="form-control" asp-for="LevelId" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;" required>
 						</select>
-
-						@*<select class="form-control" id="edit_cous_Level" asp-items="@(new SelectList(@ViewBag.Level, "Id", "Name"))" style="border-radius:0px;">
-						</select>*@
+						<span asp-validation-for="Level" class="text-danger"></span>
 					</div>
 
 					<div class="col">
 						<label>RegNumber:</label>
-						<input type="text" readonly asp-for="RegNumber" id="regNo" class="form-control" placeholder="RegNumber">
+						<input type="text" readonly asp-for="RegNumber" id="regNo" class="form-control" placeholder="RegNumber" required>
 					</div>
 				</div>
 
 				<div class="row form-group mb-3">
 					<div class=" col form-group">
 						<label>Password:</label>
-						<input type="password" asp-for="Password" class="form-control" placeholder="Password">
+						<input type="password" asp-for="Password" class="form-control" placeholder="Password" required minlength="7" maxlength="15">
+						<span asp-validation-for="Password" class="text-danger"></span>
 					</div>
 
 					<div class=" col form-group ">
 						<label>Confirm Password:</label>
-						<input type="password" asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password">
+						<input type="password" asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" required>
+						<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 					</div>
 
 
 					<div class="col">
 						<label>Phone no:</label>
-						<input type="tel" asp-for="PhoneNumber" class="form-control" placeholder="">
+						<input type="tel" asp-for="PhoneNumber" class="form-control" placeholder="telephone" minlength="8" required>
 					</div>
 				</div>
 

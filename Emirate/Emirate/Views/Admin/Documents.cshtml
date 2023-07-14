@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Emirate.Models.StudentPayment>
+@{
+    ViewData["Title"] = "Documents";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container col-lg-12 col-md-12 col-sm-12">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">School Fees And Payment</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Dashboard</a></li>
+                    <li class="breadcrumb-item active">Records</li>
+                </ul>
+            </div>
+            <div class="col-auto float-right ml-auto">
+                <a class="btn text-decoration-none p-1" data-toggle="modal" id="common_button" data-target="#addFeesModal"><i class="fa fa-plus p-0 m-0"></i>Add Fees</a>
+            </div>
+
+            <div class="@*col-auto*@ float-left ml-auto">
+                <a class="btn text-decoration-none p-1" data-toggle="modal" id="common_button" data-target="#displayFeesModal"><i class="fa fa-display p-0 m-0"></i>Display Fees</a>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <h1>Pending Documents for Approval</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Document ID</th>
+                <th>User ID</th>
+                <th>File Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var document in Model)
+            {
+                <tr>
+                    <td>@document.DocumentId</td>
+                    <td>@document.ApplicationUser</td>
+                    <td>@document.FileName</td>
+                    <td>
+                        <a href="@Url.Action("ApproveDocument", new { documentId = document.DocumentId })">Approve</a> |
+                        <a href="@Url.Action("DeclineDocument", new { documentId = document.DocumentId })">Decline</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -94,7 +94,19 @@ namespace Emirate.Controllers
             ViewBag.Level = _dropdownHelper.DropdownOfLevels();
             ViewBag.Gender = _dropdownHelper.GetDropdownByKey(DropDownKey.Gender).Result;
             ViewBag.Department = _dropdownHelper.GetDepartmentDropdown();
-            if (applicationUserViewModel != null)
+
+            if (ModelState.IsValid)
+            {
+                if (applicationUserViewModel.Password != applicationUserViewModel.ConfirmPassword)
+                {
+					ModelState.AddModelError("ConfirmPassword", "The password and confirm password do not match.");
+					return View(applicationUserViewModel);
+				}
+                
+            }
+			
+
+			if (applicationUserViewModel != null)
             {
                 var userEmail = await _userManager.FindByEmailAsync(applicationUserViewModel.Email);
                 applicationUserViewModel.Role = "User";
@@ -129,6 +141,16 @@ namespace Emirate.Controllers
 		public async Task<IActionResult> AdminRegister(ApplicationUserViewModel model, string base64)
 		{
 			ViewBag.Gender = _dropdownHelper.GetDropdownByKey(DropDownKey.Gender).Result;
+
+			if (!ModelState.IsValid)
+			{
+				if (model.Password != model.ConfirmPassword)
+				{
+					ModelState.AddModelError("ConfirmPassword", "The password and confirm password do not match.");
+					return View(model);
+				}
+
+			}
 
 			if (model.Email != null)
 			{

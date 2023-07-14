@@ -57,7 +57,7 @@
             <thead>
                 <tr>
                     <th class="p-0">S/N</th>
-                    <th class="p-0">Name</th>
+                    <th class="p-0">Department Name & Code</th>
                     <th class="p-0">Date Created</th>
                     <th>Action</th>
                 </tr>
@@ -74,8 +74,8 @@
                             <td>@item.Name</td>
                             <td>@item.DateCreated.ToString("d")</td>
                             <td>
-                                <span><a data-toggle="modal" data-target="#editDepartmentModal" onclick="GetDepartmentByID('@item.Id')" class="text-primary p-1"><i class="fa-solid fa-pen-to-square"></i></a> </span>
-                                <span><a data-toggle="modal" data-target="#deleteDepartmentModal" onclick="GetDepartmentByID('@item.Id')" class="text-danger p-1"><i class="fa-solid fa-trash-can"></i></a></span>
+                                <span><a data-toggle="modal" data-target="#editDepartmentModal" onclick="GetDepartmentByID('@item.Id')" class="text-primary p-1"><i class="fa-solid fa-pen-to-square p-1"></i></a> </span>
+                                <span><a data-toggle="modal" data-target="#deleteDepartmentModal" onclick="GetDepartmentByID('@item.Id')" class="text-danger p-1"><i class="fa-solid fa-trash-can p-1"></i></a></span>
                             </td>
 
                         </tr>

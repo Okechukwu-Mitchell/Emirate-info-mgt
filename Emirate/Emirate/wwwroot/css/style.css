@@ -42,6 +42,7 @@ a {
 
 a:hover {
 	text-decoration: none;
+	list-style:none;
 }
 
 #text {
@@ -108,15 +109,17 @@ footer {
 	height: 50vh;
 }
 
-a#dept {
-	color: #01001ad8;
+#dept a {
+	color:blue;
 	text-decoration: none;
+	list-style:none;
 }
 
-	a#dept:hover {
-		color: magenta;
-		text-decoration: none;
-	}
+#dept a:hover {
+	color: magenta;
+	text-decoration: none;
+	list-style: none
+}
 
 #more {
 	display: none;
@@ -230,7 +233,7 @@ a#dept {
 }
 
 .sidebar-menu ul li:nth-child(1) {
-	pointer-events: none;
+	/*pointer-events: none;*/
 }
 
 .sidebar-menu ul li:nth-last-child(1) {
@@ -424,13 +427,13 @@ a#dept {
 	cursor: pointer;
 }
 
-	.user img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+.user img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 #userdbd-row-1 {
 	display: flex;
@@ -469,9 +472,9 @@ a#dept {
 	padding: 3px;
 }
 
-#profedit {
+/*#profedit {
 	color: white;
-}
+}*/
 
 #prof-pxedit {
 	background: rgb(109, 46, 235);

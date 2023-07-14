@@ -1,22 +1,21 @@
-﻿using Emirate.DATABASE;
+﻿
+using Emirate.DATABASE;
+using Emirate.EmirateEnums;
 using Emirate.Enum;
-using Emirate.Helper;
 using Emirate.IHelper;
 using Emirate.Models;
 using Emirate.ViewModels;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting.Server;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using System.Reflection.Metadata;
-using System.Security.Policy;
-using System.Xml.Linq;
+
+
 
 namespace Emirate.Controllers
 {
-    [Authorize]
+    
 	public class AdminController : Controller
 	{
 		private readonly ApplicationDb _context;
@@ -25,7 +24,9 @@ namespace Emirate.Controllers
 		private readonly IDropdownHelper _dropdownHelper;
 		private readonly IDescriptionHelper _descriptionHelper;
         private readonly IEmailHelper _emailHelper;
-        public AdminController(ApplicationDb context, IUserHelper userHelper, IDropdownHelper dropdownHelper,  IDescriptionHelper descriptionHelper, IAdminHelper adminHelper)
+        private readonly DbContextOptions<ApplicationDb> options;
+        public AdminController(ApplicationDb context, IUserHelper userHelper, IDropdownHelper dropdownHelper,  IDescriptionHelper descriptionHelper,
+            IAdminHelper adminHelper)
         {
 			_context = context;
 			_userHelper = userHelper;
@@ -58,15 +59,161 @@ namespace Emirate.Controllers
 
 			return View(dashboard);
 		}
-	
 
-		public IActionResult Students()
+
+
+
+        [HttpGet]
+        public IActionResult SchoolFee()
+        {
+            ViewBag.Level = _dropdownHelper.DropdownOfLevels();
+            ViewBag.Faculty = _dropdownHelper.GetFacultyDropdown();
+
+            var schoolMoney = _adminHelper.SchoolMoney();
+            if (schoolMoney != null && schoolMoney.Count() > 0)
+            {
+                return View(schoolMoney);
+            }
+            return View();
+        }
+
+
+
+
+
+
+
+
+        //[HttpGet]
+        //public IActionResult SchoolFee()
+        //{
+        //    ViewBag.Level = _dropdownHelper.DropdownOfLevels();
+        //    ViewBag.Faculty = _dropdownHelper.GetFacultyDropdown();
+
+
+        //    var user = _context.Applications.Where(c => c.UserName != null && !c.IsDeactivated && !c.IsAdmin)
+        //        .Include(u => u.Department).Include(u => u.Level).Include(u => u.Department.Faculty)
+        //        .Select(s => new PayViewModel
+        //        {
+        //            UserId = s.Id,
+        //            UserName = s.UserName,
+        //            LastName = s.LastName,
+        //            MiddleName = s.MiddleName,
+        //            FirstName = s.FirstName,        
+        //            RegNumber = s.RegNumber,
+        //            DatePaid = DateTime.Now,
+        //            //Faculty = s.Department.Faculty,
+        //            //Status = PaymentStatus.Pending,
+
+        //            //SchoolFees = _context.SchoolFees
+        //            //.Where(x => x.Faculty == s.Department.Faculty && x.Level == s.Level)
+        //            //.Select(x => x.Amount.ToString())
+        //            //.FirstOrDefault(),
+
+        //            SchoolFees = _context.SchoolFees.FirstOrDefault(x => x.FacultyId == s.Department.FacultyId && x.Level == s.Level).Amount.ToString(),
+        //        }).ToList();
+
+        //    return View(user);
+
+        //}
+
+
+
+
+        public IActionResult Documents()
+        {
+            var pendingDocuments = _context.StudentPayments.Where(d => d.Status == PaymentStatus.Pending).ToList();
+            return View(pendingDocuments);
+
+        }
+
+        
+        //public IActionResult ApproveDocuments(int documentId)
+        //{
+        //    var document = _context.StudentPayments.Find(documentId);
+        //    if (document != null && document.Status == DocumentStatus.Pending)
+        //    {
+        //        document.Status = DocumentStatus.Approved;
+        //        _context.SaveChanges();
+        //    }
+        //    return RedirectToAction("SchoolFee");
+
+        //}
+        public IActionResult ApproveDocument(int id)
+        {
+            var student = _adminHelper.ApproveDocument(id);
+            if (student != null)
+            {
+                return RedirectToAction("SchoolFee");
+            }
+            return View();
+
+        }
+
+        
+        public IActionResult DeclineDocument(int id)
+        {
+            var student = _adminHelper.DeclineDocument(id);
+            if (student != null)
+            {
+                return RedirectToAction("SchoolFee");
+            }
+            return View();
+            
+        }
+
+
+        //public IActionResult UpdatePaymentStatus(int studentId, PaymentStatus newStatus)
+        //{
+        //    // Retrieve the student record from the database based on the student ID
+        //    var student = _context.Students.FirstOrDefault(s => s.StudentId == studentId);
+
+        //    if (student == null)
+        //    {
+        //        // Handle the case where the student is not found
+        //        return NotFound();
+        //    }
+
+        //    // Update the student's payment status with the new value
+        //    student.PaymentStatus = newStatus;
+
+        //    // Save the changes to the database
+        //    _context.SaveChanges();
+
+        //    // Redirect or return a response indicating the successful status update
+        //    return RedirectToAction("Index", "Student"); // Redirect to the student list or any other appropriate action
+        //}
+
+
+        [HttpPost]
+        public JsonResult SchoolFee(string payment)
+        {
+            ViewBag.Level = _dropdownHelper.DropdownOfLevels();
+            ViewBag.Faculty = _dropdownHelper.GetFacultyDropdown();
+
+            if (payment != null)
+            {
+                var fees = JsonConvert.DeserializeObject<SchoolFeesViewModel>(payment);
+                if (fees != null)
+                {
+                    var result = _adminHelper.SchoolFee(fees);
+                    if (result)
+                    {
+                        return Json(new { isError = false, msg = "Created Successfully" });
+                    }
+                }
+                return Json(new { isError = true, msg = "Unable to Update" });
+            }
+            return Json(new { isError = true, msg = "Error Occurred" });
+        }
+
+        public IActionResult Students()
 		{
             ViewBag.Level = _dropdownHelper.DropdownOfLevels();
             ViewBag.Gender = _dropdownHelper.GetDropdownByKey(DropDownKey.Gender).Result;
             ViewBag.Department = _dropdownHelper.GetDepartmentDropdown();
 
-            var user = _context.Applications.Where(c => !c.IsDeactivated && !c.IsAdmin).Include(d => d.Department).Include(b => b.Level).Include(g => g.Gender).ToList();
+            var user = _context.Applications.Where(c => !c.IsDeactivated && !c.IsAdmin).Include(d => d.Department).Include(b => b.Level).Include(g => g.Gender).OrderBy(p => p.FirstName).ToList();
             if (user.Count > 0)
             {
                 var data = new ApplicationUserViewModel()
@@ -75,13 +222,9 @@ namespace Emirate.Controllers
                 };
                 return View(data);
             }
-            //var applicationModel = _adminHelper.GetListOfStudent();
-            //if (applicationModel != null)
-            //{
-            //    return View(applicationModel);
-            //}
             return View();
 		}
+
 
         [HttpGet]
         public IActionResult Faculty()
@@ -224,8 +367,8 @@ namespace Emirate.Controllers
         public IActionResult Departments(string detail)
 		{
             var dept = JsonConvert.DeserializeObject<DepartmentViewModel>(detail);
-            var factulty = _context.Faculty.Where(f => f.Name.ToLower() == dept.Faculty.ToLower() && !f.Deleted).FirstOrDefault();
-            dept.FacultyId = factulty.Id;
+            //var factulty = _context.Faculty.Where(f => f.Name.ToLower() == dept.Faculty.ToLower() && !f.Deleted).FirstOrDefault();
+            //dept.FacultyId = factulty.Id;
             var check = _context.Departments.Where(f => f.Name.ToLower() == dept.Name.ToLower()).FirstOrDefault();
             if (check != null) {
                 if (check.Deleted)

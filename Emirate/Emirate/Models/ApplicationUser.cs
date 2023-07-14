@@ -1,6 +1,8 @@
 ﻿using Emirate.Enum;
 using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Xml.Linq;
 
 namespace Emirate.Models
 {
@@ -26,7 +28,14 @@ namespace Emirate.Models
 		public int? GenderId { get; set; }
         [ForeignKey("GenderId")]
         public virtual CommonDropdowns? Gender { get; set; }
-        public string? Password { get; set; }
+
+		[DataType(DataType.Password)]
+		[Display(Name = "Password")]
+		public string? Password { get; set; }
+
+		[DataType(DataType.Password)]
+		[Display(Name = "Confirm Password")]
+		[Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
 		public string? ConfirmPassword { get; set; }
 		public bool RememberMe { get; set; }
 		public string? CountryId { get; set; }
@@ -35,5 +44,9 @@ namespace Emirate.Models
 
 		[NotMapped]
 		public string? UserRole { get; set; }
+		[NotMapped]
+		public string? PaymentStatus { get; set; }
 	}
 }
+
+

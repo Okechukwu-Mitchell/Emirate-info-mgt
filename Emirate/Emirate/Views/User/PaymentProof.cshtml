@@ -1,0 +1,51 @@
+﻿@model Emirate.ViewModels.PayViewModel;
+@{
+    ViewData["Title"] = "PaymentProof";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<style>
+    .card {
+        box-shadow: 7px 7px 6px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+</style>
+
+<div class="container col-lg-12 col-md-12 col-sm-12 my-4">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Upload Payment Receipt</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Dashboard</a></li>
+                    <li class="breadcrumb-item active">Upload</li>
+                </ul>
+            </div>
+           
+
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Upload your proof of payment</h3>
+                    </div>
+                    <div class="card-body p-5">
+                        <form method="post" enctype="multipart/form-data" asp-controller="User" asp-action="PaymentProof">
+                            <input type="file" name="file" class="rounded-2 p-3" accept=".jpg,.jpeg,.png,.pdf" required />
+                            <div class="text-center mt-3">
+                                <button class="  p-1 common_button w-25" type="submit" style="border-radius: 5px;">Upload</button>
+                            </div>
+                        </form>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -209,9 +209,9 @@
 
             <ul class="ml-0 p-0">
                 <li>
-                    <a href="#" class="nav_logo">
-                        <span class="icon"><i class="fa-solid fa-layer-group nav_logo-icon"></i></span>
-                        <span class="nav_logo-name title">EUC</span>
+                    <a href="@Url.Action("Index","Emirate")" class="nav_logo">
+                        <span class="icon"><i class="fa-solid fa-house nav_logo-icon"></i></span>
+                        <span class="nav_logo-name title">EUC Home</span>
                     </a>
                 </li>
                 <li>
@@ -234,19 +234,14 @@
                 </li>
                 <li>
                     <a href="@Url.Action("Students", "Admin")" class="nav_link">
-                        <span class="icon"><i class="fa-solid fa-users nav_icon"></i></span>
+                        <span class="icon"><i class="fa-solid fa-people-group nav_icon"></i></span>
                         <span class="nav_name title"> Students</span>
                     </a>
                 </li>
-                <li>
-                    <a class="nav_link" asp-action="Courses" asp-controller="Admin">
-                        <span class="icon"><i class=" fa-solid fa-feather nav_icon"></i></span>
-                        <span class="nav_name title"> Courses</span>
-                    </a>
-                </li>
+                
                 <li>
                     <a class="nav_link" asp-action="Departments" asp-controller="Admin">
-                        <span class="icon"><i class="fa-solid fa-house nav_icon"></i></span>
+                        <span class="icon"><i class="fa-solid fa-layer-group nav_icon"></i></span>
                         <span class="nav_icon title"> Departments</span>
                     </a>
                 </li>
@@ -254,6 +249,12 @@
                     <a class="nav_link" asp-action="Level" asp-controller="Admin">
                         <span class="icon"><i class="fa-solid fa-stairs nav_icon"></i></span>
                         <span class="nav_icon title"> Level</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav_link" asp-action="Courses" asp-controller="Admin">
+                        <span class="icon"><i class=" fa-solid fa-feather nav_icon"></i></span>
+                        <span class="nav_name title"> Courses</span>
                     </a>
                 </li>
 
@@ -264,7 +265,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav_link">
+                    <a href="@Url.Action("SchoolFee", "Admin")" class="nav_link">
                         <span class="icon"><i class="fa-solid fa-sack-dollar nav_icon"></i></span>
                         <span class="nav_icon"> Fees</span>
                     </a>

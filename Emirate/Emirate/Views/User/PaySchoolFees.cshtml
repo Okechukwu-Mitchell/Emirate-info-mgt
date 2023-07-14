@@ -1,0 +1,140 @@
+﻿@model Emirate.ViewModels.StudentSchoolFeesRecordViewModel;
+@{
+    ViewData["Title"] = "PaySchoolFees";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+
+<style>
+    .card {
+        box-shadow: 7px 7px 6px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .copy-button {
+        display: inline-block;
+        padding: 5px 10px;
+        border: none;
+        background-color: transparent;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .notification {
+        position: absolute; /* Change to absolute positioning */
+        top: 75%; /* Adjust the top value as needed */
+        left: 50%; /* Adjust the left value as needed */
+        width: 80px;
+        transform: translate(-50%, -50%); /* Center the notification horizontally and vertically */
+        background-color: #e3e3e3;
+        color: #0b0b2f;
+        padding: 5px;
+        border-radius: 12px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .notification.show {
+        opacity: 1;
+        visibility: visible;
+    }
+</style>
+
+
+
+<div class="container col-lg-12 col-md-12 col-sm-12 my-4">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">School Fees And Payment</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Dashboard</a></li>
+                    <li class="breadcrumb-item active">Records</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container my-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center"> Student Details </h3>
+                    </div>
+                    <div class="card-body">
+                        
+                        @if (Model != null)
+                        {
+                            <div class="col">
+                                <label>Name : @Model.User.FullName <span></span></label><br />
+                                <label>Username : @Model.User.UserName  </label><br />
+                                <label>Faculty : @Model.User.Department?.Faculty?.Name  </label><br />
+                                <label>Department : @Model.User.Department?.Name  </label><br />
+                                <label>Reg Number : @Model.User.RegNumber</label><br />
+                                <label>Level : @Model.User.Level?.Name</label><br />
+                            
+                                <p>
+                                <h3 class="card-title">School Account Details </h3>
+                                </p>
+
+                                <label><b>Amount to Pay (₦) :</b> @Model.SchoolFee?.Amount</label><br />
+                                <p><b>Bank Name : </b>EUC MicroFinance Bank</p>
+
+                          
+                                <p>
+                                    <div id="notification" class="notification"></div>
+
+                                    <b>Account Number : </b><span id="copy-content">1112000789</span>
+                                    <button onclick="copyText()" class="copy-button">
+                                        <i class="fa-solid fa-clone"></i>
+                                    </button>
+                                </p>
+                            
+                                @*<p><b>Account Number : </b>1112000789 <i class="fa-solid fa-copy"></i></p>*@
+                                <p><b>Account Name : </b>Emirate University College</p>
+                            </div>
+
+                        }
+                        <div class="text-center mt-2">
+                            <a href="@Url.Action("PaymentProof", "User")" class=" btn p-2 common_button w-25 text-decoration-none"> Complete Payment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    function copyText() {
+        var copyText = document.getElementById("copy-content");
+        var tempInput = document.createElement("input");
+        tempInput.value = copyText.textContent;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+
+        showNotification("Copied!");
+    }
+
+    function showNotification(message) {
+        var notification = document.getElementById("notification");
+        notification.textContent = message;
+        notification.classList.add("show");
+        setTimeout(function () {
+            notification.classList.remove("show");
+        }, 3000);
+    }
+</script>
+
+
